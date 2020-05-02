@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="keywords" content="visual abstract, research summary">
+
+  <meta property="og:site_name" content="Research Explained"/>
+  <meta property="og:url" content="{{ page.url | absolute_url }}"/>
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description }}">
+
+  {% if page.layout == 'summary' %}
+  <meta property="og:image" content="{{ page.url | absolute_url }}summary.png">
+  <meta name="twitter:image" content="{{ page.url | absolute_url }}summary.png">
+  <meta name="twitter:image:alt" content="Visual Abstract for {{ page.research_title }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% endif %}
+
+  <meta name="twitter:site" content="@researchexplain">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:description" content="{{ page.description }}">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/css/main.css" type="text/css" />
+  <noscript>
+    <style type="text/css">
+      {% include print.css %}
+    </style>
+  </noscript>
+</head>
+<body>
+
+{{ content }}
+
+</body>
+</html>

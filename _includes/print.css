@@ -1,0 +1,7 @@
+/* remove interactive elements */
+.expandable, .collapse {
+  display: none;
+}
+.collapsible {
+  max-height: 100%;
+}

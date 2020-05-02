@@ -1,5 +1,7 @@
 # Research Explained
 
+**We make beautiful summaries of the latest COVID-19 research studies.**
+
 https://researchexplained.org
 
 Research Explained aims to stop the spread of misinformation by empowering the general public to understand the latest scientific research without being a subject matter expert. Our focus is research related to COVID-19.
@@ -12,6 +14,6 @@ We are a team of doctors, designers, and engineers working together to create th
 
 ## Contributing
 
-If you find an error in one of our summaries, feel free to open a pull request, or email contact@researchexplained.org
+If you find an error in one of our summaries, please open a pull request or issue! You can also email contact@researchexplained.org or tweet [@researchexplain](https://twitter.com/researchexplain)
 
 All rights reserved.
