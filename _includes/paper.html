@@ -2,18 +2,18 @@
 
 <h3>Original Paper 
   <span id="doi">
-    <abbr title="DOI (Digital Object Identifier) is a unique ID for each paper">DOI</abbr>:&nbsp;<a href="https://doi.org/{{ page.doi }}">{{ page.doi }}</a>
+    <abbr title="DOI (Digital Object Identifier) is a unique ID for each paper">DOI</abbr>:&nbsp;<a href="https://doi.org/{{ page.doi }}" target="_blank" rel="noopener">{{ page.doi }}</a>
   </span>
 </h3>
 <p>
   {% if page.research_link %}
-  <a href="{{ page.research_link }}">
+  <a href="{{ page.research_link }}" target="_blank" rel="noopener">
   {% else %}
-  <a href="https://doi.org/{{ page.doi }}">
+  <a href="https://doi.org/{{ page.doi }}" target="_blank" rel="noopener">
   {% endif %}
     {{ page.research_title }}</a>
 
   {% if page.research_pdf %}
-  [<a href="{{ page.research_pdf }}">PDF</a>]
+  [<a href="{{ page.research_pdf }}" target="_blank" rel="noopener">PDF</a>]
   {% endif %}
 </p>
