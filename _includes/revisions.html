@@ -1,0 +1,14 @@
+{% assign revisions = site.pages | where: "doi", page.doi | sort: "revision" | reverse %}
+{% if revisions.size > 1 %}
+<h3>Revisions</h3>
+<p>The study authors revised their paper after posting it. We have explanations for the following revisions:</p>
+<ul>
+  {% for r in revisions %}
+    {% if r.version == page.version %}
+      <li><strong>You are currently on Version {{ r.version }}</strong></li>
+    {% else %}
+      <li><a href="{{ r.url }}">Version {{ r.version }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+{% endif %}

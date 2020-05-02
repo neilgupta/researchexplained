@@ -6,9 +6,10 @@ layout: base
   Research Explained &rarr; <em>{{ page.research_title }}</em>
   <!-- <a href="/" style="text-decoration: none; font-weight: bold">Research Explained</a> &rarr; <em>{{ page.research_title }}</em> -->
 
-  {% if page.latest_revision %}
+  {% assign latest = site.pages | where: "doi", page.doi | sort: "revision" | last %}
+  {% if page.version != latest.version %}
     <div class="warning" style="margin-top: 1em; font-size: 1.2em;">
-      <strong>This paper has been updated.</strong> The authors submitted a revised version of their paper based on community feedback. The changes were significant enough to require an updated explanation. <a href="{{ page.latest_revision }}">See the latest version &rarr;</a>
+      <strong>This paper has been updated.</strong> The authors revised their paper based on community feedback. The changes were significant enough to require an updated explanation. <a href="{{ latest.url }}">See the latest explanation &rarr;</a>
     </div>
   {% endif %}
 </div>

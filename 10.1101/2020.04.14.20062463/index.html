@@ -3,7 +3,10 @@ layout: summary
 title: What percent of Santa Clara County, California has been infected by SARS-CoV-2, the virus that causes COVID-19?
 description: A recent study claims over 4% but serious concerns about the methods make real conclusions difficult. Let's look at what the researchers did and what that means.
 research_title: COVID-19 Antibody Seroprevalence in Santa Clara County, California
-# latest_revision: /10.1101/2020.04.14.20062463/v2
+research_link: https://www.medrxiv.org/content/10.1101/2020.04.14.20062463v1
+research_pdf: https://www.medrxiv.org/content/10.1101/2020.04.14.20062463v1.full.pdf
+doi: 10.1101/2020.04.14.20062463
+version: 1
 published_on: May 1, 2020
 ---
 
@@ -13,7 +16,6 @@ published_on: May 1, 2020
   </p>
 
   {% include show_details.html %}
-
   <div class="collapsible" style="margin-bottom: 4em;">
     <h2>Key Takeaways</h2>
 
@@ -228,26 +230,17 @@ published_on: May 1, 2020
 </article>
 
 <div class="appendix">
-  <h3>Original Paper <span id="doi"><abbr title="DOI (Digital Object Identifier) is a unique ID for each paper">DOI</abbr>:&nbsp;<a href="https://doi.org/10.1101/2020.04.14.20062463">10.1101/2020.04.14.20062463</a></span></h3>
-  <p>
-    <a href="https://www.medrxiv.org/content/10.1101/2020.04.14.20062463v1">{{ page.research_title }}</a> [<a href="https://www.medrxiv.org/content/10.1101/2020.04.14.20062463v1.full.pdf">PDF</a>]
-  </p>
+  {% include paper.html %}
 
   <h3>Additional Reading</h3>
   <p>For more details and technical discussion of the study, we recommend reading the following resources:</p>
 
   <ul>
     <li><a href="https://statmodeling.stat.columbia.edu/2020/04/19/fatal-flaws-in-stanford-study-of-coronavirus-prevalence">Concerns with that Stanford study of coronavirus prevalence</a></li>
-    <li><a href="https://medium.com/@balajis/peer-review-of-covid-19-antibody-seroprevalence-in-santa-clara-county-california-1f6382258c25">Peer Review of “COVID-19 Antibody Seroprevalence in Santa Clara County, California”</a></li>
+    <li><a href="https://medium.com/@balajis/peer-review-of-covid-19-antibody-seroprevalence-in-santa-clara-county-california-1f6382258c25">Peer Review of "COVID-19 Antibody Seroprevalence in Santa Clara County, California"</a></li>
   </ul>
 
-  <!-- <h3>Revisions</h3>
-  <p>The study authors revised their paper after posting it. We have explanations for the following revisions:</p>
-  <ul>
-    <li><a href="/10.1101/2020.04.14.20062463/v2">Version 2</a></li>
-    <li><strong>Version 1</strong></li>
-  </ul> -->
-
+  {% include revisions.html %}
   {% include sharing.html %}
 </div>
 
