@@ -155,7 +155,7 @@ span#doi {
   }
 }
 
-.appendix a, footer a {
+.appendix a, footer a, .pill {
   color: rgba(0, 0, 0, 0.6);
 }
 

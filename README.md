@@ -14,6 +14,6 @@ We are a team of doctors, designers, and engineers working together to create th
 
 ## Contributing
 
-If you find an error in one of our summaries, please open a pull request or issue! You can also email contact@researchexplained.org or tweet [@researchexplain](https://twitter.com/researchexplain)
+If you find an error in one of our summaries, please open a pull request or issue! You can also [contact us directly](https://researchexplained.org/contact)
 
 All rights reserved.
