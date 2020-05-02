@@ -9,7 +9,7 @@ layout: base
   {% assign latest = site.pages | where: "doi", page.doi | sort: "revision" | last %}
   {% if page.version != latest.version %}
     <div class="warning" style="margin-top: 1em; font-size: 1.2em;">
-      <strong>This paper has been updated.</strong> The authors revised their paper based on community feedback. The changes were significant enough to require an updated explanation. <a href="{{ latest.url }}">See the latest explanation &rarr;</a>
+      <strong>The original paper was updated.</strong> The authors revised their paper based on community feedback. The changes were significant enough to require an updated explanation. <a href="{{ latest.url }}">See the latest explanation &rarr;</a>
     </div>
   {% endif %}
 </div>
