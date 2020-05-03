@@ -241,8 +241,7 @@ published_on: May 1, 2020
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 <script>
-  var ctx = document.getElementById('sampleChart');
-  var myPieChart = new Chart(ctx, {
+  new Chart(document.getElementById('sampleChart'), {
     type: 'pie',
     data: {
       datasets: [{
@@ -250,10 +249,7 @@ published_on: May 1, 2020
         backgroundColor: ['#0b24fb', '#000'],
         borderWidth: [0,0]
       }],
-      labels: [
-          'Tested Positive',
-          'Tested Negative'
-      ]
+      labels: ['Tested Positive', 'Tested Negative']
     },
     options: {
       title: {

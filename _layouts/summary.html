@@ -38,22 +38,16 @@ function fallbackCopyTextToClipboard(text, cb) {
 
   try {
     if (document.execCommand('copy')) cb();
-  } catch (err) {
-    // do nothing
+  } finally {
+    document.body.removeChild(textArea);
   }
-
-  document.body.removeChild(textArea);
 }
 function copyTextToClipboard(text, cb) {
   if (!navigator.clipboard) {
     fallbackCopyTextToClipboard(text, cb);
     return;
   }
-  navigator.clipboard.writeText(text).then(function() {
-    cb();
-  }, function(err) {
-    // do nothing
-  });
+  navigator.clipboard.writeText(text).then(cb);
 }
 
 document.getElementById("copyUrl").addEventListener('click', function(e) {
@@ -64,9 +58,9 @@ document.getElementById("copyUrl").addEventListener('click', function(e) {
   return false;
 });
 
-var coll = document.getElementsByClassName("expandable");
-for (var i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function(e) {
+var expandables = document.getElementsByClassName("expandable");
+for (var i = 0; i < expandables.length; i++) {
+  expandables[i].addEventListener("click", function(e) {
     e.preventDefault();
     this.classList.toggle("active");
     var content = this.parentElement.nextElementSibling;
@@ -79,9 +73,9 @@ for (var i = 0; i < coll.length; i++) {
   });
 }
 
-var coll2 = document.getElementsByClassName("collapse");
-for (var i = 0; i < coll2.length; i++) {
-  coll2[i].addEventListener("click", function(e) {
+var collapses = document.getElementsByClassName("collapse");
+for (var i = 0; i < collapses.length; i++) {
+  collapses[i].addEventListener("click", function(e) {
     e.preventDefault();
     var c = this.parentElement.parentElement.previousElementSibling.lastElementChild;
     c.click();
