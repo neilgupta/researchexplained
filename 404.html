@@ -1,11 +1,13 @@
 ---
 layout: default
 title: Not Found
-description: Page Not Found
+description: The server returns this instead. The actual page may have been moved, or there is a typo in the link.
 question: What happens when a page is not found?
 permalink: /404.html
 ---
 
 <p class="summary">
-  The server returns this instead. The actual page may have been moved, or there is a typo in the link.<br/><br/>Try starting from the <a href="/">home page</a>, or <a href="/contact">contact us</a> about it!
+  {{ page.description }}
 </p>
+
+<p>Try starting from the <a href="/">home page</a>, or <a href="/contact">contact us</a> about it!</p>
