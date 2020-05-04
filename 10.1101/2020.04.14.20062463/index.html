@@ -10,262 +10,116 @@ version: 1
 preprint: true
 preview: true
 published_on: May 1, 2020
+include_js: true
 ---
 
-<article>
-  <p class="summary">
-    {{ page.description }}
-  </p>
+<h2>What did the study do?</h2>
 
-  {% include show_details.html %}
-  <div class="collapsible" style="margin-bottom: 4em;">
-    <h2>Key Takeaways</h2>
+<ul class="timeline timeline-split">
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>Sampling</span>
+    </div>
+    <div class="timeline-marker">
+      <svg height='2em' width='2em' style="margin-left: -0.6em; margin-top: -0.2em;" fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve"><path d="M72.6,61.6l-5-8.7V17.4c0-1.8-1.5-3.3-3.3-3.3H15.6c-1.8,0-3.3,1.5-3.3,3.3v35.5l-5,8.7c-0.5,0.9-0.5,2,0,2.9  c0.5,0.9,1.4,1.4,2.5,1.4h60.3c1,0,2-0.5,2.5-1.4C73.1,63.6,73.1,62.5,72.6,61.6C72.6,61.6,72.6,61.6,72.6,61.6z M14.3,17.4  c0-0.7,0.6-1.3,1.3-1.3h48.8c0.7,0,1.3,0.6,1.3,1.3v34.8H14.3V17.4z M70.9,63.4c-0.1,0.1-0.3,0.4-0.7,0.4H9.9  c-0.4,0-0.7-0.3-0.7-0.4s-0.2-0.5,0-0.9l4.8-8.4h52.2l4.8,8.4C71.1,63,71,63.3,70.9,63.4z"></path><path d="M37.7,60.3h-6.4c-0.6,0-1,0.4-1,1s0.4,1,1,1h6.4c0.6,0,1-0.4,1-1S38.2,60.3,37.7,60.3z"></path><path d="M48.7,60.3h-6.4c-0.6,0-1,0.4-1,1s0.4,1,1,1h6.4c0.6,0,1-0.4,1-1S49.3,60.3,48.7,60.3z"></path><path d="M50,29.5v-6.3v-1.2c0-0.6-0.4-1-1-1s-1,0.4-1,1v0.4l-16.4,4.9H27c-1.7,0-3.1,1.4-3.1,3.1v4.3c0,1.5,1.1,2.7,2.5,3l1.6,7.7  c0.2,0.9,0.9,1.5,1.8,1.5H31c0.5,0,1.1-0.2,1.4-0.7s0.5-1,0.4-1.5c0,0,0,0,0,0l-1.5-7h0.4L48,42.8v0.4c0,0.6,0.4,1,1,1s1-0.4,1-1  v-1.2v-6.3c1.6-0.4,2.8-1.6,2.8-3.2S51.6,29.9,50,29.5z M25.9,34.8v-4.3c0-0.6,0.5-1.1,1.1-1.1h3.8v6.5H30h-2.8H27  C26.4,35.9,25.9,35.4,25.9,34.8z M30.7,45.1H30l-1.5-7.1h0.7L30.7,45.1z M32.8,36.2v-7L48,24.6v5.8V35v5.8L32.8,36.2z M50,33.8v-2.1  c0.5,0.2,0.8,0.6,0.8,1.1S50.5,33.5,50,33.8z"></path><path d="M54.3,31c0.2,0,0.4-0.1,0.6-0.2l0.8-0.6c0.4-0.3,0.5-1,0.2-1.4c-0.3-0.4-1-0.5-1.4-0.2l-0.8,0.6c-0.4,0.3-0.5,1-0.2,1.4  C53.7,30.9,54,31,54.3,31z"></path><path d="M56.2,31.7h-0.8c-0.6,0-1,0.4-1,1s0.4,1,1,1h0.8c0.6,0,1-0.4,1-1S56.8,31.7,56.2,31.7z"></path><path d="M54.9,34.6c-0.4-0.3-1.1-0.3-1.4,0.2c-0.3,0.4-0.3,1.1,0.2,1.4l0.8,0.6c0.2,0.1,0.4,0.2,0.6,0.2c0.3,0,0.6-0.1,0.8-0.4  c0.3-0.4,0.3-1.1-0.2-1.4L54.9,34.6z"></path></svg>
+    </div>
+    <div class="timeline-content">
+      <h3 class="timeline-title">Targeted Facebook ads to recruit participants</h3>
+      {% include expand_details.html warning_count=1 %}
+      <div class="collapsible">
+        <h4>Our Take</h4>
+        <h5>
+          ⚠️ Not representative of the overall population
+        </h5>
+        <p>
+         Participants found out about the study through targeted Facebook ads. However the demographics (sex, race, zip code) were not very representative of the county as a whole. For example, only 8% of participants were Hispanic while the county is actually 26% Hispanic. The other problem is that certain people in the community like those who don’t have internet access or can’t easily drive to a testing center were less likely to participate. Even harder to adjust for is the fact that the people who might have participated in the study might have been those people who were most worried they had the infection which might lead to an overestimate.
+        </p>
+        {% include hide_details.html %}
+      </div>
+    </div>
+  </li>
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>Testing</span>
+    </div>
+    <div class="timeline-marker">
+      <svg height='2em' width='2em' style="margin-left: -0.6em; margin-top: -0.2em;" fill="#000000" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" x="0px" y="0px"><path d="M93.72,67.18a1.74,1.74,0,0,0-.78-1.07L70.8,52.76c.23-.08.45-.15.67-.24L74,51.43a3,3,0,0,0,.54-5.28l-13-9,.67,0a10,10,0,0,0,6.54-2.45l1.77-1.55A3,3,0,0,0,69.45,28L57.36,24.17,59,22.82a10.4,10.4,0,0,0,3.57-6.08L63,14.21a3.3,3.3,0,0,0-4.9-3.47l-18.87,11a2.27,2.27,0,0,0-.25.18c-.26.12-.52.23-.77.36l-15,7.87A25.55,25.55,0,0,1,11.42,33H7.94a1.7,1.7,0,1,0,0,3.4h3.48A29,29,0,0,0,24.8,33.14l15-7.88a9.94,9.94,0,0,1,7.56-.67L67.8,31l-1.27,1.11a6.49,6.49,0,0,1-4.23,1.61l-6-.24-.68-.47a19.26,19.26,0,0,0-11-3.45H40.12a1.7,1.7,0,1,0,0,3.4h4.51a16,16,0,0,1,9.09,2.84L72.09,48.56l-2,.83a5.84,5.84,0,0,1-5-.19l-9.9-5.12a21.06,21.06,0,0,0-17.16-1l-6.39,1.6-.19.07a6.35,6.35,0,0,0-4.08,6.43c.22,2.91,2.19,4.4,4.11,5.48l12.1,6.54c2.6,1.53,4.23,2.6,5,4.62l.66,1.82a.63.63,0,0,1-.12.65.64.64,0,0,1-.59.21L27.57,64c-.94-.28-1.86-.6-2.76-.91a22.75,22.75,0,0,0-7.34-1.69H7.94a1.7,1.7,0,1,0,0,3.4h9.53a20.52,20.52,0,0,1,6.22,1.5c.95.33,1.92.66,2.89,1l21,6.58.12,0a4.22,4.22,0,0,0,.93.11,4,4,0,0,0,4-3.24L79.86,87a1.61,1.61,0,0,0,.87.24,1.69,1.69,0,0,0,1.44-.79l11.33-18A1.71,1.71,0,0,0,93.72,67.18ZM47.19,21l12.46-7.25-.44,2.33a7,7,0,0,1-2.41,4.1L53.51,23l-5.1-1.61C48,21.22,47.6,21.12,47.19,21ZM30.81,50.94a3,3,0,0,1,1.82-3l5.68-1.42L33.64,54l-.47-.26C31.29,52.63,30.88,51.88,30.81,50.94ZM80.18,83.25,51.52,66.06c-1.32-2.9-3.88-4.44-6.22-5.81l-8.66-4.68L43.11,45.3a17.66,17.66,0,0,1,10.57,1.8l8.25,4.26.07.06L89.7,68.13Z"></path><path d="M74.17,75.68a6.6,6.6,0,1,0-6.59-6.6A6.61,6.61,0,0,0,74.17,75.68Zm0-9.79A3.2,3.2,0,1,1,71,69.08,3.2,3.2,0,0,1,74.17,65.89Z"></path></svg>
+    </div>
+    <div class="timeline-content">
+      <h3 class="timeline-title">Tested for antibodies in 3330 people</h3>
+      {% include expand_details.html warning_count=1 %}
+      <div class="collapsible">
+        <p>
+          While most coronavirus tests look for the virus in the nose or throat, in this study, participants drove to a drive-through collection site where they had blood drawn through a finger prick. The blood was analyzed for antibodies which are produced when the body fights off a viral infection. By looking for these antibodies in your blood, it can be determined if you had the virus or not, even if you never showed any symptoms.
+        </p>
+        <h4>Our Take</h4>
+        <h5>
+          ⚠️ Antibody blood test may not be accurate enough
+        </h5>
+        <p>
+          No test is perfect, and every test will have some rate of false positives and false negatives. False positives are where the test says that a person has antibodies, but they actually do not. False negatives are where the test says the person doesn't have antibodies, but they actually do. In this study, the false positive rate for this test is somewhere between 1.3% and 2.7%, which is about the same as the rate of positive tests that they record in the population.
+        </p>
+        {% include hide_details.html %}
+      </div>
+    </div>
+  </li>
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>Results</span>
+    </div>
+    <div class="timeline-marker">
+      <svg height='2em' width='2em' style="margin-left: -0.6em; margin-top: -0.2em;" fill="#000000" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" x="0px" y="0px"><g data-name="Group"><path data-name="Compound Path" d="M73.6,14.8H58.1a8.5,8.5,0,0,0-16.2,0H26.4a9.1,9.1,0,0,0-9,9V82.1a9,9,0,0,0,9,9H73.6a9,9,0,0,0,9-9V23.8A9.1,9.1,0,0,0,73.6,14.8Zm-31,2a1,1,0,0,0,1-.8,6.6,6.6,0,0,1,12.8,0,1,1,0,0,0,1,.8H62L65.9,28c.1.4.1.7-.1.9a1.1,1.1,0,0,1-.9.5h-30a1.2,1.2,0,0,1-.8-.4,1,1,0,0,1-.2-.9L37,16.8Zm38,65.3a7,7,0,0,1-7,7H26.4a7,7,0,0,1-7-7V23.8a7.1,7.1,0,0,1,7-7h8.5L32,27.6a2.8,2.8,0,0,0,.5,2.6,3.1,3.1,0,0,0,2.4,1.2h30a3.1,3.1,0,0,0,2.5-1.3,2.9,2.9,0,0,0,.4-2.7L64.2,16.8h9.4a7.1,7.1,0,0,1,7,7Z"></path><path data-name="Path" d="M30.1,45.7H49.9a1,1,0,0,0,1-1,.9.9,0,0,0-1-1H30.1a.9.9,0,0,0-1,1A1,1,0,0,0,30.1,45.7Z"></path><path data-name="Path" d="M69.9,56.7H30.1a.9.9,0,0,0-1,1,1,1,0,0,0,1,1H69.9a1,1,0,0,0,1-1A.9.9,0,0,0,69.9,56.7Z"></path><path data-name="Path" d="M69.9,69.7H30.1a.9.9,0,0,0-1,1,1,1,0,0,0,1,1H69.9a1,1,0,0,0,1-1A.9.9,0,0,0,69.9,69.7Z"></path></g></svg>
+    </div>
+    <div class="timeline-content">
+      <h3 class="timeline-title">50 people tested positive</h3>
+      <canvas id="sampleChart"></canvas>
+    </div>
+  </li>
+  <li class="timeline-item">
+    <div class="timeline-info">
+      <span>Conclusion</span>
+    </div>
+    <div class="timeline-marker">
+      <svg height='2em' width='2em' style="margin-left: -0.6em; margin-top: -0.2em;" fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><path d="M87,26c0-7.2-5.8-13-13-13H26c-7.2,0-13,5.8-13,13v48c0,7.2,5.8,13,13,13h48c7.2,0,13-5.8,13-13V26z M85,26v23H51V15h23   C80.1,15,85,19.9,85,26z M26,15h23v34H15V26C15,19.9,19.9,15,26,15z M15,74V51h34v34H26C19.9,85,15,80.1,15,74z M74,85H51V51h34v23   C85,80.1,80.1,85,74,85z"></path><polygon points="40.4,65 32.7,65 32.7,57.4 30.7,57.4 30.7,65 23.1,65 23.1,67 30.7,67 30.7,74.7 32.7,74.7 32.7,67 40.4,67  "></polygon><rect x="23.1" y="31.7" width="17.3" height="2"></rect><rect x="58.7" y="71" width="17.3" height="2"></rect><rect x="58.7" y="62" width="17.3" height="2"></rect><polygon points="60.5,38.1 61.9,39.5 67.4,34.1 72.8,39.5 74.2,38.1 68.8,32.7 74.2,27.2 72.8,25.8 67.4,31.3 61.9,25.8 60.5,27.2    65.9,32.7  "></polygon></g></svg>
+    </div>
+    <div class="timeline-content">
+      <h3 class="timeline-title">Estimated a <span class="highlight">2.49 - 4.16% infection rate</span> for Santa Clara county</h3>
+      {% include expand_details.html warning_count=1 %}
+      <div class="collapsible">
+        <p>
+          The researchers used a number of statistical techniques to extrapolate their results to the population of the entire county. Based on this number, the authors made the claim that the actual number of infections in the county was much higher (50-85 times) than had been reported from standard testing. If true, that means COVID-19 is not as deadly as we thought, since a lot more people have it than we realized.
+        </p>
+        <h4>Our Take</h4>
+        <h5>
+          ⚠️ Calculations make a number of questionable assumptions
+        </h5>
+        <p>
+          Many of the patients who have been diagnosed with the virus are still fighting for their lives, and we do not know if they will survive yet. In order to calculate a death rate, the researchers used statistical techniques to estimate how many of those cases will resolve as fatal in the future. These calculations are prone to error and not particularly accurate.
+        </p>
+        {% include hide_details.html %}
+      </div>
+    </div>
+  </li>
+</ul>
 
-    <ul>
-      <li>
-        This study was a first step in demonstrating the use of antibody tests but more population studies will need to be done moving forward to confirm or refute the findings. These findings cannot be applied to other parts of the country like New York.
-      </li>
-      <li>
-        At this time, we really don’t know if the population the researchers tested was representative enough to draw firm conclusions about how many people have had the virus or what the death rate is.
-      </li>
-      <li>
-        There was a lot of excitement generated in the news and social media over only half of the story. We caution against reading too much into these headlines without examining the details.
-      </li>
-    </ul>
+<h2>How was it reported?</h2>
 
-    <h2>Why is this question important?</h2>
+<ul class="timeline timeline-split">
+  {% include media_review.html
+    link="https://www.mercurynews.com/2020/04/20/feud-over-stanford-coronavirus-study-the-authors-owe-us-all-an-apology/"
+    title="Feud Over Stanford Coronavirus Study: The Authors Owe Us All An Apology"
+    score=8 content="sjmn"
+  %}
 
-    <p>The question is important for two reasons:</p>
+  {% include media_review.html
+    link="https://www.nytimes.com/2020/04/21/health/coronavirus-antibodies-california.html"
+    title="Coronavirus Infections May Not Be Uncommon, Tests Suggest"
+    score=6 content="nyt"
+  %}
 
-    <ol>
-      <li>
-        We don't really know how many people have been exposed to the coronavirus. Due to a shortage of tests, many people with symptoms or suspected cases of coronavirus have not been tested, so the number of positive coronavirus tests probably underestimates the number of people who have had the virus. This can help decision makers understand how many people have the virus, which helps them make decisions about controlling its spread.
-      </li>
-      <li>
-        How dangerous is coronavirus? This reason is related to the first. Since we don't know how many people are infected, we can’t accurately calculate how common it is to suffer serious symptoms or die from the virus. This is really important for us to understand so that we can understand the risks of the virus and also try and prepare our hospitals for the number of people who might need medical help. 
-      </li>
-    </ol>
-
-    <p>
-      Getting more information about these areas would be helpful for public health experts, epidemiologists, hospitals, and political leaders to implement the correct actions to control the pandemic.
-    </p>
-
-    <h2>Our Take</h2>
-
-    <p>This study has come under heavy criticism from other researchers based on the techniques used to arrive at their conclusions, so let's take a look at the strengths and weaknesses of the research.</p>
-    <h3>Strengths</h3>
-    <p>This was an ambitious study that was among the first of its kind in the United States. It provides a template for future researchers to improve upon. The researchers attempted to control for some of the limitations in their testing and acknowledged some of the limits on the conclusions that can be drawn from their study.</p>
-    <h3>Weaknesses</h3>
-    <p>There are several areas pointed out by other researchers that limit how sure we can be about the results in this study. We discuss these below.</p>
-
-    {% include hide_details.html %}
-  </div>
-
-  <h2>What did the study do?</h2>
-
-  <ul class="timeline timeline-split">
-    <li class="timeline-item">
-      <div class="timeline-info">
-        <span>Sampling</span>
-      </div>
-      <div class="timeline-marker">
-        <svg height='2em' width='2em' style="margin-left: -0.6em; margin-top: -0.2em;" fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve"><path d="M72.6,61.6l-5-8.7V17.4c0-1.8-1.5-3.3-3.3-3.3H15.6c-1.8,0-3.3,1.5-3.3,3.3v35.5l-5,8.7c-0.5,0.9-0.5,2,0,2.9  c0.5,0.9,1.4,1.4,2.5,1.4h60.3c1,0,2-0.5,2.5-1.4C73.1,63.6,73.1,62.5,72.6,61.6C72.6,61.6,72.6,61.6,72.6,61.6z M14.3,17.4  c0-0.7,0.6-1.3,1.3-1.3h48.8c0.7,0,1.3,0.6,1.3,1.3v34.8H14.3V17.4z M70.9,63.4c-0.1,0.1-0.3,0.4-0.7,0.4H9.9  c-0.4,0-0.7-0.3-0.7-0.4s-0.2-0.5,0-0.9l4.8-8.4h52.2l4.8,8.4C71.1,63,71,63.3,70.9,63.4z"></path><path d="M37.7,60.3h-6.4c-0.6,0-1,0.4-1,1s0.4,1,1,1h6.4c0.6,0,1-0.4,1-1S38.2,60.3,37.7,60.3z"></path><path d="M48.7,60.3h-6.4c-0.6,0-1,0.4-1,1s0.4,1,1,1h6.4c0.6,0,1-0.4,1-1S49.3,60.3,48.7,60.3z"></path><path d="M50,29.5v-6.3v-1.2c0-0.6-0.4-1-1-1s-1,0.4-1,1v0.4l-16.4,4.9H27c-1.7,0-3.1,1.4-3.1,3.1v4.3c0,1.5,1.1,2.7,2.5,3l1.6,7.7  c0.2,0.9,0.9,1.5,1.8,1.5H31c0.5,0,1.1-0.2,1.4-0.7s0.5-1,0.4-1.5c0,0,0,0,0,0l-1.5-7h0.4L48,42.8v0.4c0,0.6,0.4,1,1,1s1-0.4,1-1  v-1.2v-6.3c1.6-0.4,2.8-1.6,2.8-3.2S51.6,29.9,50,29.5z M25.9,34.8v-4.3c0-0.6,0.5-1.1,1.1-1.1h3.8v6.5H30h-2.8H27  C26.4,35.9,25.9,35.4,25.9,34.8z M30.7,45.1H30l-1.5-7.1h0.7L30.7,45.1z M32.8,36.2v-7L48,24.6v5.8V35v5.8L32.8,36.2z M50,33.8v-2.1  c0.5,0.2,0.8,0.6,0.8,1.1S50.5,33.5,50,33.8z"></path><path d="M54.3,31c0.2,0,0.4-0.1,0.6-0.2l0.8-0.6c0.4-0.3,0.5-1,0.2-1.4c-0.3-0.4-1-0.5-1.4-0.2l-0.8,0.6c-0.4,0.3-0.5,1-0.2,1.4  C53.7,30.9,54,31,54.3,31z"></path><path d="M56.2,31.7h-0.8c-0.6,0-1,0.4-1,1s0.4,1,1,1h0.8c0.6,0,1-0.4,1-1S56.8,31.7,56.2,31.7z"></path><path d="M54.9,34.6c-0.4-0.3-1.1-0.3-1.4,0.2c-0.3,0.4-0.3,1.1,0.2,1.4l0.8,0.6c0.2,0.1,0.4,0.2,0.6,0.2c0.3,0,0.6-0.1,0.8-0.4  c0.3-0.4,0.3-1.1-0.2-1.4L54.9,34.6z"></path></svg>
-      </div>
-      <div class="timeline-content">
-        <h3 class="timeline-title">Targeted Facebook ads to recruit participants</h3>
-        {% include expand_details.html warning_count=1 %}
-        <div class="collapsible">
-          <h4>Our Take</h4>
-          <h5>
-            ⚠️ Not representative of the overall population
-          </h5>
-          <p>
-           Participants found out about the study through targeted Facebook ads. However the demographics (sex, race, zip code) were not very representative of the county as a whole. For example, only 8% of participants were Hispanic while the county is actually 26% Hispanic. The other problem is that certain people in the community like those who don’t have internet access or can’t easily drive to a testing center were less likely to participate. Even harder to adjust for is the fact that the people who might have participated in the study might have been those people who were most worried they had the infection which might lead to an overestimate.
-          </p>
-          {% include hide_details.html %}
-        </div>
-      </div>
-    </li>
-    <li class="timeline-item">
-      <div class="timeline-info">
-        <span>Testing</span>
-      </div>
-      <div class="timeline-marker">
-        <svg height='2em' width='2em' style="margin-left: -0.6em; margin-top: -0.2em;" fill="#000000" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" x="0px" y="0px"><path d="M93.72,67.18a1.74,1.74,0,0,0-.78-1.07L70.8,52.76c.23-.08.45-.15.67-.24L74,51.43a3,3,0,0,0,.54-5.28l-13-9,.67,0a10,10,0,0,0,6.54-2.45l1.77-1.55A3,3,0,0,0,69.45,28L57.36,24.17,59,22.82a10.4,10.4,0,0,0,3.57-6.08L63,14.21a3.3,3.3,0,0,0-4.9-3.47l-18.87,11a2.27,2.27,0,0,0-.25.18c-.26.12-.52.23-.77.36l-15,7.87A25.55,25.55,0,0,1,11.42,33H7.94a1.7,1.7,0,1,0,0,3.4h3.48A29,29,0,0,0,24.8,33.14l15-7.88a9.94,9.94,0,0,1,7.56-.67L67.8,31l-1.27,1.11a6.49,6.49,0,0,1-4.23,1.61l-6-.24-.68-.47a19.26,19.26,0,0,0-11-3.45H40.12a1.7,1.7,0,1,0,0,3.4h4.51a16,16,0,0,1,9.09,2.84L72.09,48.56l-2,.83a5.84,5.84,0,0,1-5-.19l-9.9-5.12a21.06,21.06,0,0,0-17.16-1l-6.39,1.6-.19.07a6.35,6.35,0,0,0-4.08,6.43c.22,2.91,2.19,4.4,4.11,5.48l12.1,6.54c2.6,1.53,4.23,2.6,5,4.62l.66,1.82a.63.63,0,0,1-.12.65.64.64,0,0,1-.59.21L27.57,64c-.94-.28-1.86-.6-2.76-.91a22.75,22.75,0,0,0-7.34-1.69H7.94a1.7,1.7,0,1,0,0,3.4h9.53a20.52,20.52,0,0,1,6.22,1.5c.95.33,1.92.66,2.89,1l21,6.58.12,0a4.22,4.22,0,0,0,.93.11,4,4,0,0,0,4-3.24L79.86,87a1.61,1.61,0,0,0,.87.24,1.69,1.69,0,0,0,1.44-.79l11.33-18A1.71,1.71,0,0,0,93.72,67.18ZM47.19,21l12.46-7.25-.44,2.33a7,7,0,0,1-2.41,4.1L53.51,23l-5.1-1.61C48,21.22,47.6,21.12,47.19,21ZM30.81,50.94a3,3,0,0,1,1.82-3l5.68-1.42L33.64,54l-.47-.26C31.29,52.63,30.88,51.88,30.81,50.94ZM80.18,83.25,51.52,66.06c-1.32-2.9-3.88-4.44-6.22-5.81l-8.66-4.68L43.11,45.3a17.66,17.66,0,0,1,10.57,1.8l8.25,4.26.07.06L89.7,68.13Z"></path><path d="M74.17,75.68a6.6,6.6,0,1,0-6.59-6.6A6.61,6.61,0,0,0,74.17,75.68Zm0-9.79A3.2,3.2,0,1,1,71,69.08,3.2,3.2,0,0,1,74.17,65.89Z"></path></svg>
-      </div>
-      <div class="timeline-content">
-        <h3 class="timeline-title">Tested for antibodies in 3330 people</h3>
-        {% include expand_details.html warning_count=1 %}
-        <div class="collapsible">
-          <p>
-            While most coronavirus tests look for the virus in the nose or throat, in this study, participants drove to a drive-through collection site where they had blood drawn through a finger prick. The blood was analyzed for antibodies which are produced when the body fights off a viral infection. By looking for these antibodies in your blood, it can be determined if you had the virus or not, even if you never showed any symptoms.
-          </p>
-          <h4>Our Take</h4>
-          <h5>
-            ⚠️ Antibody blood test may not be accurate enough
-          </h5>
-          <p>
-            No test is perfect, and every test will have some rate of false positives and false negatives. False positives are where the test says that a person has antibodies, but they actually do not. False negatives are where the test says the person doesn't have antibodies, but they actually do. In this study, the false positive rate for this test is somewhere between 1.3% and 2.7%, which is about the same as the rate of positive tests that they record in the population.
-          </p>
-          {% include hide_details.html %}
-        </div>
-      </div>
-    </li>
-    <li class="timeline-item">
-      <div class="timeline-info">
-        <span>Results</span>
-      </div>
-      <div class="timeline-marker">
-        <svg height='2em' width='2em' style="margin-left: -0.6em; margin-top: -0.2em;" fill="#000000" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" x="0px" y="0px"><g data-name="Group"><path data-name="Compound Path" d="M73.6,14.8H58.1a8.5,8.5,0,0,0-16.2,0H26.4a9.1,9.1,0,0,0-9,9V82.1a9,9,0,0,0,9,9H73.6a9,9,0,0,0,9-9V23.8A9.1,9.1,0,0,0,73.6,14.8Zm-31,2a1,1,0,0,0,1-.8,6.6,6.6,0,0,1,12.8,0,1,1,0,0,0,1,.8H62L65.9,28c.1.4.1.7-.1.9a1.1,1.1,0,0,1-.9.5h-30a1.2,1.2,0,0,1-.8-.4,1,1,0,0,1-.2-.9L37,16.8Zm38,65.3a7,7,0,0,1-7,7H26.4a7,7,0,0,1-7-7V23.8a7.1,7.1,0,0,1,7-7h8.5L32,27.6a2.8,2.8,0,0,0,.5,2.6,3.1,3.1,0,0,0,2.4,1.2h30a3.1,3.1,0,0,0,2.5-1.3,2.9,2.9,0,0,0,.4-2.7L64.2,16.8h9.4a7.1,7.1,0,0,1,7,7Z"></path><path data-name="Path" d="M30.1,45.7H49.9a1,1,0,0,0,1-1,.9.9,0,0,0-1-1H30.1a.9.9,0,0,0-1,1A1,1,0,0,0,30.1,45.7Z"></path><path data-name="Path" d="M69.9,56.7H30.1a.9.9,0,0,0-1,1,1,1,0,0,0,1,1H69.9a1,1,0,0,0,1-1A.9.9,0,0,0,69.9,56.7Z"></path><path data-name="Path" d="M69.9,69.7H30.1a.9.9,0,0,0-1,1,1,1,0,0,0,1,1H69.9a1,1,0,0,0,1-1A.9.9,0,0,0,69.9,69.7Z"></path></g></svg>
-      </div>
-      <div class="timeline-content">
-        <h3 class="timeline-title">50 people tested positive</h3>
-        <canvas id="sampleChart"></canvas>
-      </div>
-    </li>
-    <li class="timeline-item">
-      <div class="timeline-info">
-        <span>Conclusion</span>
-      </div>
-      <div class="timeline-marker">
-        <svg height='2em' width='2em' style="margin-left: -0.6em; margin-top: -0.2em;" fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><g><path d="M87,26c0-7.2-5.8-13-13-13H26c-7.2,0-13,5.8-13,13v48c0,7.2,5.8,13,13,13h48c7.2,0,13-5.8,13-13V26z M85,26v23H51V15h23   C80.1,15,85,19.9,85,26z M26,15h23v34H15V26C15,19.9,19.9,15,26,15z M15,74V51h34v34H26C19.9,85,15,80.1,15,74z M74,85H51V51h34v23   C85,80.1,80.1,85,74,85z"></path><polygon points="40.4,65 32.7,65 32.7,57.4 30.7,57.4 30.7,65 23.1,65 23.1,67 30.7,67 30.7,74.7 32.7,74.7 32.7,67 40.4,67  "></polygon><rect x="23.1" y="31.7" width="17.3" height="2"></rect><rect x="58.7" y="71" width="17.3" height="2"></rect><rect x="58.7" y="62" width="17.3" height="2"></rect><polygon points="60.5,38.1 61.9,39.5 67.4,34.1 72.8,39.5 74.2,38.1 68.8,32.7 74.2,27.2 72.8,25.8 67.4,31.3 61.9,25.8 60.5,27.2    65.9,32.7  "></polygon></g></svg>
-      </div>
-      <div class="timeline-content">
-        <h3 class="timeline-title">Estimated a <span class="highlight">2.49 - 4.16% infection rate</span> for Santa Clara county</h3>
-        {% include expand_details.html warning_count=1 %}
-        <div class="collapsible">
-          <p>
-            The researchers used a number of statistical techniques to extrapolate their results to the population of the entire county. Based on this number, the authors made the claim that the actual number of infections in the county was much higher (50-85 times) than had been reported from standard testing. If true, that means COVID-19 is not as deadly as we thought, since a lot more people have it than we realized.
-          </p>
-          <h4>Our Take</h4>
-          <h5>
-            ⚠️ Calculation make a number of questionable assumptions
-          </h5>
-          <p>
-            Many of the patients who have been diagnosed with the virus are still fighting for their lives, and we do not know if they will survive yet. In order to calculate a death rate, the researchers used statistical techniques to estimate how many of those cases will resolve as fatal in the future. These calculations are prone to error and not particularly accurate.
-          </p>
-          {% include hide_details.html %}
-        </div>
-      </div>
-    </li>
-  </ul>
-
-  <h2>How was it reported?</h2>
-
-  <ul class="timeline timeline-split">
-    <li class="timeline-item">
-      <div class="timeline-info">
-        <span class="score8"></span>
-      </div>
-      <div class="timeline-marker">
-        <span class="score8"></span>
-      </div>
-      <div class="timeline-content">
-        <h3 class="timeline-title">
-          <a href="https://www.mercurynews.com/2020/04/20/feud-over-stanford-coronavirus-study-the-authors-owe-us-all-an-apology/" target="_blank" rel="noopener">Feud Over Stanford Coronavirus Study: The Authors Owe Us All An Apology</a>
-        </h3>
-
-        {% include expand_details.html %}
-        <div class="collapsible">
-          <h4>San Jose Mercury News</h4>
-          <p>
-            The article accurately covers the debate between the study authors' claims and the issues raised by researchers who are critical of the study.
-          </p>
-          {% include hide_details.html %}
-        </div>
-      </div>
-    </li>
-    <li class="timeline-item">
-      <div class="timeline-info">
-        <span class="score6"></span>
-      </div>
-      <div class="timeline-marker">
-        <span class="score6"></span>
-      </div>
-      <div class="timeline-content">
-        <h3 class="timeline-title">
-          <a href="https://www.nytimes.com/2020/04/21/health/coronavirus-antibodies-california.html" target="_blank" rel="noopener">Coronavirus Infections May Not Be Uncommon, Tests Suggest</a>
-        </h3>
-
-        {% include expand_details.html %}
-        <div class="collapsible">
-          <h4>New York Times</h4>
-          <p>
-            The article reports on the paper's results, but does not mention any limitations of the study or the intense criticism it has faced.
-          </p>
-          {% include hide_details.html %}
-        </div>
-      </div>
-    </li>
-    <li class="timeline-item">
-      <div class="timeline-info">
-        <span class="score5"></span>
-      </div>
-      <div class="timeline-marker">
-        <span class="score5"></span>
-      </div>
-      <div class="timeline-content">
-        <h3 class="timeline-title">
-          <a href="https://www.wsj.com/articles/new-data-suggest-the-coronavirus-isnt-as-deadly-as-we-thought-11587155298" target="_blank" rel="noopener">New Data Suggest the Coronavirus Isn't as Deadly as We Thought</a>
-        </h3>
-
-        {% include expand_details.html warning_count=1 %}
-        <div class="collapsible">
-          <h4>Wall Street Journal</h4>
-          <h5>
-            ⚠️ Conflict of interest
-          </h5>
-          <p>
-            This opinion piece was actually written by one of the original researchers, which is a major conflict of interest. Unsurprisingly, there's no discussion of potential pitfalls in the study. There are definitely more balanced articles out there.
-          </p>
-          {% include hide_details.html %}
-        </div>
-      </div>
-    </li>
-  </ul>
-</article>
-
-<div class="appendix">
-  {% include paper.html %}
-
-  <h3>Additional Reading</h3>
-  <p>For more details and technical discussion of the study, we recommend reading the following resources:</p>
-
-  <ul>
-    <li><a href="https://statmodeling.stat.columbia.edu/2020/04/19/fatal-flaws-in-stanford-study-of-coronavirus-prevalence" target="_blank" rel="noopener">Concerns with that Stanford study of coronavirus prevalence</a></li>
-    <li><a href="https://medium.com/@balajis/peer-review-of-covid-19-antibody-seroprevalence-in-santa-clara-county-california-1f6382258c25" target="_blank" rel="noopener">Peer Review of "COVID-19 Antibody Seroprevalence in Santa Clara County, California"</a></li>
-  </ul>
-
-  {% include revisions.html %}
-  {% include sharing.html %}
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-<script>
-  new Chart(document.getElementById('sampleChart'), {
-    type: 'pie',
-    data: {
-      datasets: [{
-        data: [50, 3280],
-        backgroundColor: ['#0b24fb', '#000'],
-        borderWidth: [0,0]
-      }],
-      labels: ['Tested Positive', 'Tested Negative']
-    },
-    options: {
-      title: {
-        text: '1.5% Infection Rate',
-        display: true,
-        fontSize: 16,
-        padding: 20,
-        fontColor: '#0b24fb'
-      },
-      legend: {
-        position: 'right'
-      },
-      padding: {
-        bottom: 20
-      }
-    }
-  });
-</script>
+  {% include media_review.html
+    link="https://www.wsj.com/articles/new-data-suggest-the-coronavirus-isnt-as-deadly-as-we-thought-11587155298"
+    title="New Data Suggest the Coronavirus Isn't as Deadly as We Thought"
+    score=5 content="wsj" warning_count=1
+  %}
+</ul>

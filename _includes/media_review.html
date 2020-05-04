@@ -1,0 +1,21 @@
+<li class="timeline-item">
+  <div class="timeline-info">
+    <span class="score{{ include.score }}"></span>
+  </div>
+  <div class="timeline-marker">
+    <span class="score{{ include.score }}"></span>
+  </div>
+  <div class="timeline-content">
+    <h3 class="timeline-title">
+      <a href="{{ include.link }}" target="_blank" rel="noopener">{{ include.title }}</a>
+    </h3>
+
+    {% include expand_details.html %}
+    <div class="collapsible">
+      {% capture content_include %}{% include_relative _content/{{ include.content }}.md %}{% endcapture %}
+      {{ content_include | markdownify }}
+
+      {% include hide_details.html %}
+    </div>
+  </div>
+</li>

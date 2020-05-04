@@ -18,7 +18,31 @@ layout: base
   <h1>{{ page.title }}</h1>
 </div>
 
-{{ content }}
+<article>
+  <p class="summary">
+    {{ page.description }}
+  </p>
+
+  {% include show_details.html %}
+  <div class="collapsible" style="margin-bottom: 4em;">
+    {% capture details_include %}{% include_relative _content/details.md %}{% endcapture %}
+    {{ details_include | markdownify }}
+
+    {% include hide_details.html %}
+  </div>
+
+  {{ content }}
+</article>
+
+<div class="appendix">
+  {% include paper.html %}
+
+  {% capture appendix_include %}{% include_relative _content/appendix.md %}{% endcapture %}
+  {{ appendix_include | markdownify }}
+
+  {% include revisions.html %}
+  {% include sharing.html %}
+</div>
 
 {% include footer.html %}
 
@@ -87,3 +111,7 @@ for (var i = 0; i < collapses.length; i++) {
   });
 }
 </script>
+
+{% if page.include_js %}
+{% include_relative _content/js.html %}
+{% endif %}

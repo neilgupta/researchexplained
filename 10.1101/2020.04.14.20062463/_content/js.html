@@ -1,0 +1,29 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script>
+  new Chart(document.getElementById('sampleChart'), {
+    type: 'pie',
+    data: {
+      datasets: [{
+        data: [50, 3280],
+        backgroundColor: ['#0b24fb', '#000'],
+        borderWidth: [0,0]
+      }],
+      labels: ['Tested Positive', 'Tested Negative']
+    },
+    options: {
+      title: {
+        text: '1.5% Infection Rate',
+        display: true,
+        fontSize: 16,
+        padding: 20,
+        fontColor: '#0b24fb'
+      },
+      legend: {
+        position: 'right'
+      },
+      padding: {
+        bottom: 20
+      }
+    }
+  });
+</script>
