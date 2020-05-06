@@ -39,6 +39,28 @@ abbr {
   padding-right: 5px;
 }
 
+.cursive {
+  font-family: cursive;
+}
+
+blockquote {
+  margin-top: 1em;
+  margin-left: 2em;
+  padding-left: -1em;
+  border-left: 3px solid #00a2a4;
+}
+
+blockquote p:first-child {
+  padding-top: 0;
+}
+
+p.caption {
+  text-align: center;
+  font: 0.9em;
+  color: #aaa;
+  margin-top: -2em;
+}
+
 .paper-title {
   max-width: 900px;
   font-size: 0.8em;
@@ -157,6 +179,10 @@ span#doi {
 
 .appendix a, footer a, .pill {
   color: rgba(0, 0, 0, 0.6);
+}
+
+a.pill {
+  text-decoration: none;
 }
 
 .wrapper {
@@ -421,7 +447,8 @@ footer #copyright {
 .timeline-marker .score3,
 .timeline-marker .score2,
 .timeline-marker .score1,
-.timeline-marker .score0 {
+.timeline-marker .score0,
+.timeline-marker .dot {
   display: block;
   width: 10px;
   height: 10px;
@@ -494,7 +521,7 @@ footer #copyright {
 }
 .score3 {
   background-color: #EC4C47;
-  color: #000;
+  color: #fff;
 }
 .score2 {
   background-color: #BF0E08;
@@ -507,6 +534,9 @@ footer #copyright {
 .score0 {
   background-color: #BF0E08;
   color: #fff;
+}
+.dot {
+  background-color: #00a2a4;
 }
 .pill {
   background-color: #EDF0F2;
@@ -550,3 +580,54 @@ footer #copyright {
 @media print {
   {% include print.css %}
 }
+
+#bios h3, #bios img, #bios > p, #bios .expansion_btn {
+  text-align: center;
+}
+#bios .wrapper {
+  margin-bottom: 4em;
+}
+#bios > p {
+  margin-top: -0.5em;
+  margin-bottom: 0.5em;
+  padding: 0;
+}
+#bios .pill {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+#bios > p .pill:hover {
+  background-color: #EDF0F2;
+}
+#bios .profile_pic {
+  margin: 2em auto -1em auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #ccc;
+  background-size: contain;
+}
+#bios #neil_bio {
+  background-image: url("/about/neil.jpeg");
+}
+/*#bios #neil_bio:hover {
+  background-image: url("/about/neil_hover.jpeg");
+}*/
+#bios #neelaysh_bio {
+  background-image: url("/about/neelaysh.png");
+}
+/*#bios #neelaysh_bio:hover {
+  background-image: url("/about/neelaysh_hover.jpeg");
+}*/
+#bios #farzad_bio {
+  background-image: url("/about/farzad.png");
+}
+/*#bios #farzad_bio:hover {
+  background-image: url("/about/farzad_hover.jpeg");
+}*/
+#bios #shruti_bio {
+  background-image: url("/about/shruti.jpeg");
+}
+/*#bios #shruti_bio:hover {
+  background-image: url("/about/shruti_hover.jpeg");
+}*/
