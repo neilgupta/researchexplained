@@ -181,6 +181,20 @@ span#doi {
   color: rgba(0, 0, 0, 0.6);
 }
 
+a.fn-back {
+  color: rgba(0,0,0,0.3);
+  padding-left: 0.5em;
+}
+
+a.fn {
+  vertical-align: top;
+  font-size: 0.7em;
+  color: rgba(0,0,0,0.5);
+  padding: 0 0.1em;
+  margin-top: -0.3em;
+  text-decoration: none;
+}
+
 a.pill {
   text-decoration: none;
 }
