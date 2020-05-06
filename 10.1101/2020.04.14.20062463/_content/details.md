@@ -1,4 +1,4 @@
-## Key Takeaways
+## Key takeaways
 
 * This study was a first step in demonstrating the use of antibody tests but more population studies will need to be done moving forward to confirm or refute the findings. These findings cannot be applied to other parts of the country like New York.
 * At this time, we really don't know if the population the researchers tested was representative enough to draw firm conclusions about how many people have had the virus or what the death rate is.
@@ -14,7 +14,7 @@ The question is important for two reasons:
 
 Getting more information about these areas would be helpful for public health experts, epidemiologists, hospitals, and political leaders to implement the correct actions to control the pandemic.
 
-## Our Take
+## Our take
 
 This study has come under heavy criticism from other researchers based on the techniques used to arrive at their conclusions, so let's take a look at the strengths and weaknesses of the research.
 

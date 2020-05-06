@@ -1,4 +1,4 @@
-## Key Takeaways
+## Key takeaways
 
 1. Hydroxychloroquine -- typically used as an anti-malarial/immune suppressant medication -- is unlikely to be the magic pill to cure COVID-19. Based on this one-month study of hospitalized veterans at VA hospitals across the United States, patients given hydroxychloroquine alone actually had a statistically greater risk of death compared to a control group that received just the standard of care. Patients given both hydroxychloroquine AND azithromycin (an antibiotic) did not have a greater risk of death relative to the control group. 
 2. Given potential side effects like cardiac toxicity, HCQ should be prescribed with caution.
@@ -10,6 +10,6 @@ Political leaders, including President Trump, have touted hydroxychloroquine as 
 
 Despite the flawed evidence, people have started treating themselves with hydroxychloroquine or one of its chemical cousins, believing it will protect them from COVID-19. This has led to [at least one instance of death](https://www.npr.org/sections/coronavirus-live-updates/2020/03/24/820512107/man-dies-woman-hospitalized-after-taking-form-of-chloroquine-to-prevent-covid-19) and a shortage for those who actually need the drug for conditions including lupus and rheumatoid arthritis. Here, combating rumors with solid evidence could have important medical consequences.
 
-## Our Take
+## Our take
 
 This study presented preliminary but strong evidence that hydroxychloroquine is likely not an effective treatment for COVID-19.
