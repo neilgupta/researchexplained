@@ -299,6 +299,7 @@ footer #copyright {
   text-decoration: none;
   margin-right: 10px;
   line-height: 4em;
+  white-space: nowrap;
 }
 
 .timeline {
