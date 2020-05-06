@@ -3,8 +3,7 @@ layout: base
 ---
 
 <div class="paper-title">
-  Research Explained &rarr; <em>{{ page.research_title }}</em>
-  <!-- <a href="/" style="text-decoration: none; font-weight: bold">Research Explained</a> &rarr; <em>{{ page.research_title }}</em> -->
+  <a href="/" style="text-decoration: none; font-weight: bold">Research Explained</a> &rarr; <em>{{ page.research_title }}</em>
 
   {% assign latest = site.pages | where: "doi", page.doi | sort: "revision" | last %}
   {% if page.version != latest.version %}
