@@ -24,7 +24,7 @@ published_on: 2020-05-06
     </div>
     <div class="timeline-content">
       <h3 class="timeline-title">Extracted live virus samples from 11 patients</h3>
-      {% include expand_details.html positive_count=1 warning_count=2 %}
+      {% include expand_details.html positive_count=1 warning_count=1 %}
       <div class="collapsible">
         <p>The 11 patients came into the researchers' hospital in China in January 2020, and were confirmed to have coronavirus. The researchers found that they were able to isolate functioning viral particles from poop 💩</p>
         <h4>Our Take</h4>
@@ -33,38 +33,6 @@ published_on: 2020-05-06
         </h5>
         <p>
           Finding active coronavirus in poop is a new finding that should be further investigated, as it may affect how people protect themselves from contracting the virus.
-        </p>
-        <h5>
-          ⚠️ Lack of standardization in virus sampling
-        </h5>
-        <p>
-          A challenge in virus research is making sure you have the same amount of live virus in each sample because this can make a huge difference in the results.
-        </p>
-        <blockquote>
-          <p>
-            <span class="cursive"><strong>Example:</strong></span> Let's say a sample has 100 virus particules, but only 20 of them are living <span id="fnr:1"><a class="hint--bottom hint--medium hint--rounded fn" aria-label="Whether viruses are actually living things is a biological debate, but in this context, we just mean the virus particles are able to reproduce or replicate." href="#fn:1">1</a></span>.
-          </p>
-          <p>
-            {% for i in (1..100) %}
-            <span style="margin-left: 3px; color: {% if i <= 20 %}#00a2a4{% else %}#ccc{% endif %};">~</span>
-            {% endfor %}
-          </p>
-          <p class="caption">Sample A</p>
-          <p>
-            Meanwhile, another sample has only 50 virus particles, but all 50 of them are living.
-          </p>
-          <p>
-            {% for i in (1..50) %}
-            <span style="margin-left: 3px; color: #00a2a4;">~</span>
-            {% endfor %}
-          </p>
-          <p class="caption">Sample B</p>
-          <p>
-            Standardizing between both samples before you start measuring how quickly they kill cells is super important because you could mistakenly conclude that sample B is more deadly when really it just started with more living virus particles.
-          </p>
-        </blockquote>
-        <p>
-          There are techniques for balancing these differences out, but the researchers don't provide any detail on whether or how they did this.
         </p>
         <h5>
           ⚠️ Only one sample per patient
@@ -115,12 +83,44 @@ published_on: 2020-05-06
     </div>
     <div class="timeline-content">
       <h3 class="timeline-title">Fastest growing samples of the virus grew 270 times faster than the slowest.</h3>
-      {% include expand_details.html warning_count=1 %}
+      {% include expand_details.html warning_count=2 %}
       <div class="collapsible">
         <p>
           In the second stage, they grew the different strains of virus in the lab and measured how rapidly the strains could reproduce in cells growing in a dish, and then how fast the virus killed those cells.
         </p>
         <h4>Our Take</h4>
+        <h5>
+          ⚠️ Lack of standardization in virus sampling
+        </h5>
+        <p>
+          A challenge in virus research is making sure you have the same amount of live virus in each sample because this can make a huge difference in the results.
+        </p>
+        <blockquote>
+          <p>
+            <span class="cursive"><strong>Example:</strong></span> Let's say a sample has 100 virus particules, but only 20 of them are living <span id="fnr:1"><a class="hint--bottom hint--medium hint--rounded fn" aria-label="Whether viruses are actually living things is a biological debate, but in this context, we just mean the virus particles are able to reproduce or replicate." href="#fn:1">1</a></span>.
+          </p>
+          <p>
+            {% for i in (1..100) %}
+            <span style="margin-left: 3px; color: {% if i <= 20 %}#00a2a4{% else %}#ccc{% endif %};">~</span>
+            {% endfor %}
+          </p>
+          <p class="caption">Sample A</p>
+          <p>
+            Meanwhile, another sample has only 50 virus particles, but all 50 of them are living.
+          </p>
+          <p>
+            {% for i in (1..50) %}
+            <span style="margin-left: 3px; color: #00a2a4;">~</span>
+            {% endfor %}
+          </p>
+          <p class="caption">Sample B</p>
+          <p>
+            Standardizing between both samples before you start measuring how quickly they kill cells is super important because you could mistakenly conclude that sample B is more deadly when really it just started with more living virus particles.
+          </p>
+        </blockquote>
+        <p>
+          There are techniques for balancing these differences out, but the researchers don't provide any detail on whether or how they did this.
+        </p>
         <h5>
           ⚠️ Samples grown in monkey cells, not humans
         </h5>
