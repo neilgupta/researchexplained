@@ -180,12 +180,23 @@ span#doi {
 .appendix a, footer a, .pill {
   color: rgba(0, 0, 0, 0.6);
 }
-
 a.fn-back {
   color: rgba(0,0,0,0.3);
-  padding-left: 0.5em;
+  padding-left: 0.2em;
+  text-decoration: none;
+  visibility: hidden;
 }
-
+#footnotes {
+  margin-top: 3em;
+}
+#footnotes :target {
+  transition: color 2s ease-out;
+  color: #47B881;
+  font-weight: bold;
+}
+#footnotes :target a.fn-back {
+  visibility: visible;
+}
 a.fn {
   vertical-align: top;
   font-size: 0.7em;
@@ -193,6 +204,9 @@ a.fn {
   padding: 0 0.1em;
   margin-top: -0.3em;
   text-decoration: none;
+}
+a.fn-back:hover, a.fn:hover {
+  color: #000;
 }
 
 a.pill {
