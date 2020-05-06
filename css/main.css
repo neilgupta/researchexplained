@@ -411,6 +411,9 @@ footer #copyright {
 }
 
 @media (min-width: 768px) {
+  .timeline-info .revision_notice {
+    display: block;
+  }
   .timeline-split .timeline {
     display: table;
   }
@@ -543,7 +546,7 @@ footer #copyright {
   background-color: #EDF0F2;
   margin-left: 0;
 }
-.active .pill, .pill:hover {
+.active .pill, a .pill:hover, a.pill:hover {
   background-color: #C7CED4;
 }
 
@@ -596,9 +599,6 @@ footer #copyright {
 #bios .pill {
   margin-right: 5px;
   margin-left: 5px;
-}
-#bios > p .pill:hover {
-  background-color: #EDF0F2;
 }
 #bios .profile_pic {
   margin: 2em auto -1em auto;

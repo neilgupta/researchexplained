@@ -1,6 +1,6 @@
 <footer>
   {% if page.published_on %}
-    <p>Published on {{ page.published_on }}</p>
+    <p>Published on {{ page.published_on | date: "%B %e, %Y" }}</p>
   {% endif %}
   <p>Questions? <a href="/contact">Contact us</a></p>
   <p id="copyright">&copy; Research Explained {{ site.time | date: '%Y' }}</p>

@@ -3,6 +3,11 @@ layout: base
 ---
 
 <div class="paper-title">
+  {% if page.published_on == null or page.published_on == "" %}
+    <div class="warning" style="margin-top: 1em; font-size: 1.2em;background-color: #EC4C47;color: #fff;border-color: red;">
+      <strong>This page is unpublished.</strong> This is a preview only and is not linked from the home page!
+    </div>
+  {% endif %}
   <a href="/" style="text-decoration: none; font-weight: bold">Research Explained</a> &rarr; <em>{{ page.research_title }}</em>
 
   {% assign latest = site.pages | where: "doi", page.doi | sort: "revision" | last %}
