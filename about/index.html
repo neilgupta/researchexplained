@@ -127,33 +127,4 @@ question: What is Research Explained?
   </p>
 </div>
 
-<script>
-var expandables = document.getElementsByClassName("expandable");
-for (var i = 0; i < expandables.length; i++) {
-  expandables[i].addEventListener("click", function(e) {
-    e.preventDefault();
-    this.classList.toggle("active");
-    var content = this.parentElement.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    }
-    return false;
-  });
-}
-
-var collapses = document.getElementsByClassName("collapse");
-for (var i = 0; i < collapses.length; i++) {
-  collapses[i].addEventListener("click", function(e) {
-    e.preventDefault();
-    var c = this.parentElement.parentElement.previousElementSibling.lastElementChild;
-    c.click();
-    if (c.parentElement.previousElementSibling)
-      c.parentElement.previousElementSibling.scrollIntoView();
-    else
-      c.parentElement.scrollIntoView();
-    return false;
-  });
-}
-</script>
+{% include expandable_js.html %}
