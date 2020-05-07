@@ -6,4 +6,4 @@ question: How do I get in touch with you?
 ---
 
 * **Email:** [contact@researchexplained.org](mailto:contact@researchexplained.org)
-* **Twitter:** [@researchexplained](https://twitter.com/researchexplain)
+* **Twitter:** [@researchexplain](https://twitter.com/researchexplain)

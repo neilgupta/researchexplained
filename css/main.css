@@ -607,6 +607,15 @@ footer #copyright {
   {% include print.css %}
 }
 
+.twitter-btn {
+  background-color: #1b95e0;
+  color: #fff !important;
+}
+.twitter-btn:hover {
+  background-color: #0c7abf !important;
+  color: #fff;
+}
+
 #bios h3, #bios img, #bios > p, #bios .expansion_btn {
   text-align: center;
 }
@@ -637,13 +646,13 @@ footer #copyright {
   background-image: url("/about/neil_hover.jpeg");
 }*/
 #bios #neelaysh_bio {
-  background-image: url("/about/neelaysh.png");
+  background-image: url("/about/neelaysh.jpg");
 }
 /*#bios #neelaysh_bio:hover {
   background-image: url("/about/neelaysh_hover.jpeg");
 }*/
 #bios #farzad_bio {
-  background-image: url("/about/farzad.png");
+  background-image: url("/about/farzad.jpg");
 }
 /*#bios #farzad_bio:hover {
   background-image: url("/about/farzad_hover.jpeg");
@@ -653,4 +662,16 @@ footer #copyright {
 }
 /*#bios #shruti_bio:hover {
   background-image: url("/about/shruti_hover.jpeg");
+}*/
+#bios #grace_bio {
+  background-image: url("/about/grace.jpg");
+}
+/*#bios #grace_bio:hover {
+  background-image: url("/about/grace_hover.jpeg");
+}*/
+#bios #max_bio {
+  background-image: url("/about/max.jpg");
+}
+/*#bios #max_bio:hover {
+  background-image: url("/about/max_hover.jpeg");
 }*/
