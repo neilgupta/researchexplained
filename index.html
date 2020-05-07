@@ -18,8 +18,6 @@ description: Easy to understand, visual summaries of the latest research studies
     {% assign summaries = site.pages | where: "layout", "summary" | sort: "published_on" | reverse %}
     {% for s in summaries %}
       {% if s.published_on %}
-        {% assign latest = site.pages | where: "doi", s.doi | sort: "version" | last %}
-        {% if s.version == latest.version %}
         <li class="timeline-item">
           <div class="timeline-info">
             <span>{{ s.published_on | date: "%b %e, %Y" }}</span>
@@ -37,7 +35,6 @@ description: Easy to understand, visual summaries of the latest research studies
             <p>{{ s.description }}</p>
           </div>
         </li>
-        {% endif %}
       {% endif %}
     {% endfor %}
   </ul>
