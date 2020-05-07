@@ -195,11 +195,13 @@ a.fn-back {
 #footnotes_list :target a.fn-back {
   visibility: visible;
 }
-a.fn {
-  vertical-align: top;
+.fn {
   font-size: 0.7em;
   padding: 0 0.1em;
-  margin-top: -0.3em;
+  line-height: 1em;
+}
+.fn a {
+  vertical-align: top;
   text-decoration: none;
 }
 

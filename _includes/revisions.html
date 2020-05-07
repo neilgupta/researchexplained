@@ -1,4 +1,4 @@
-{% assign revisions = site.pages | where: "doi", page.doi | sort: "revision" | reverse %}
+{% assign revisions = site.pages | where: "doi", page.doi | sort: "version" | reverse %}
 {% if revisions.size > 1 %}
 <h3>Revisions</h3>
 <p>The study authors revised their paper after posting it. We have explanations for the following revisions:</p>
