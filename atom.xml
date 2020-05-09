@@ -1,0 +1,33 @@
+---
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Research Explained</title>
+  <link href="https://www.researchexplained.org/atom.xml" rel="self"/>
+  <link href="https://www.researchexplained.org/"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>https://www.researchexplained.org/</id>
+  <author>
+    <name>Research Explained</name>
+    <email>contact@researchexplained.org</email>
+  </author>
+
+{% assign summaries = site.pages | where: "layout", "summary" | sort: "published_on" | reverse %}
+{% for s in summaries %}
+  {% if s.published_on %}
+  <entry>
+    <title>{% if s.version > 1 %}[Revised] {% endif %}{{ s.title }}</title>
+    <link href="{{ s.url | absolute_url }}"/>
+    <updated>{{ s.published_on | date_to_xmlschema }}</updated>
+    <id>{{ s.url | absolute_url }}</id>
+    <content type="html">
+    {% capture post_content %}
+      <p>{{ s.description }}</p>
+      <p><a href="{{ s.url | absolute_url }}">Learn more</a></p>
+    {% endcapture %}
+    {{ post_content | xml_escape }}
+    </content>
+  </entry>
+  {% endif %}
+{% endfor %}
+</feed>
