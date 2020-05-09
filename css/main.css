@@ -182,7 +182,7 @@ span#doi {
 }
 a.fn-back {
   padding-left: 0.2em;
-  visibility: hidden;
+  display: none;
 }
 #footnotes_list {
   margin-top: 3em;
@@ -193,7 +193,7 @@ a.fn-back {
   font-weight: bold;
 }
 #footnotes_list :target a.fn-back {
-  visibility: visible;
+  display: initial;
 }
 .fn {
   font-size: 0.7em;
