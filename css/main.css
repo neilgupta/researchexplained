@@ -677,3 +677,8 @@ footer #copyright {
 /*#bios #max_bio:hover {
   background-image: url("/about/max_hover.jpeg");
 }*/
+
+.todo {
+  color: red;
+  font-weight: bold;
+}

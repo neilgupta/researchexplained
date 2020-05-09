@@ -1,13 +1,13 @@
-### Additional Reading
-
-For more details and technical discussion of the study, we recommend reading the following resources:
-
-* [Podcast - This Week in Evolution](https://www.microbe.tv/twievo/twievo-54/){:target="_blank"}{:rel="noopener"} (start at 9:49)
-
 ### Footnotes
 
 <ol id="footnotes_list">
   <li id="fn:1">
-    Whether viruses are actually living things is a biological debate, but in this context, we just mean the virus particles are able to reproduce or replicate. <a class="fn-back" href="#fnr:1" title="Back">&larrhk;</a>
+    U.S. Department of Veterans Affairs <a class="fn-back" href="#fnr:1" title="Back">&larrhk;</a>
+  </li>
+  <li id="fn:2">
+    This could actually be helpful given COVID-19 has disproportionately hit African-American communities. <a class="fn-back" href="#fnr:2" title="Back">&larrhk;</a>
+  </li>
+  <li id="fn:3">
+    Some people were speculating that the two drugs would work better together. <a class="fn-back" href="#fnr:3" title="Back">&larrhk;</a>
   </li>
 </ol>

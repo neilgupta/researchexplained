@@ -1,0 +1,25 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script>
+  new Chart(document.getElementById('sampleChart'), {
+    type: 'pie',
+    data: {
+      datasets: [{
+        data: [97, 113, 158],
+        backgroundColor: ['#00a2a4', '#eae6e4', '#EC4C47'],
+        borderWidth: [0,0,0]
+      }],
+      labels: ['HCQ only', 'HCQ + azithromycin', 'No HCQ']
+    },
+    options: {
+      legend: {
+        position: 'right'
+      },
+      layout: {
+        padding: {
+          top: 20,
+          bottom: 30
+        }
+      }
+    }
+  });
+</script>
