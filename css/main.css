@@ -682,3 +682,64 @@ footer #copyright {
   color: red;
   font-weight: bold;
 }
+
+#email_signup {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #email_signup {
+    width: 80%;
+  }
+}
+
+input#full_name {
+  height: 100;
+  width: 100;
+  display: none;
+}
+
+input#email {
+  padding: 10px;
+  width: 40%;
+  margin: 20px;
+}
+#email_error {
+  display: none;
+  margin-top: -1em;
+  color: #EC4C47;
+}
+#notify-me {
+  font-variant-caps: all-small-caps;
+  color: #1070CA;
+  font-weight: 600;
+  padding: 8px 25px 10px 25px;
+  background-color: #fff;
+  border: 2px solid #1070CA;
+  border-radius: 30px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+#notify-me:hover {
+  background-color: #1070CA;
+  border-color: #1070CA;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+#notify-me:disabled {
+  color: #ccc;
+  border-color: #ccc;
+  background-color: #fff;
+}
+#or-divider {
+  text-align: center;
+  font-family: cursive;
+  margin: 0 auto;
+  padding: 0;
+}
+#email-status {
+  color: green;
+  font-size: 1.2em;
+  display: none;
+}
