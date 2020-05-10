@@ -22,4 +22,62 @@
       }
     }
   });
+
+  new Chart(document.getElementById('resultsChart'), {
+    type: 'bar',
+    data: {
+      datasets: [{
+        data: [2.6, 1.1, 1],
+        label: 'Risk of Death',
+        backgroundColor: ['#234361', '#234361', '#234361'],
+        borderWidth: [0,0,0],
+        yAxisID: 'yAxis',
+        xAxisID: 'xAxis'
+      },{
+        data: [1.4, 0.43, 1],
+        label: 'Risk of Ventilator',
+        backgroundColor: ['#735DD0', '#735DD0', '#735DD0'],
+        borderWidth: [0,0,0],
+        yAxisID: 'yAxis',
+        xAxisID: 'xAxis'
+      }],
+      labels: ['HCQ only', 'HCQ + azithromycin', 'No HCQ']
+    },
+    options: {
+      tooltips: {
+        callbacks: {
+          afterTitle: function(tooltipItem, data) {
+            if (tooltipItem[0].value === "2.6") return "Statistically Significant";
+          },
+          label: function(tooltipItem, data) {return tooltipItem.value + "x";}
+        }
+      },
+      scales: {
+        yAxes: [{
+          id: 'yAxis',
+          gridLines: {
+            display: false
+          },
+          ticks: {
+            beginAtZero: true,
+            callback: function(value, index, values) {
+              if (value > 0 && value % 1 === 0)
+                return value+'x';
+            }
+          }
+        }],
+        xAxes: [{
+          id: 'xAxis',
+          gridLines: {
+            display: false
+          }
+        }]
+      },
+      layout: {
+        padding: {
+          top: 20
+        }
+      }
+    }
+  });
 </script>
