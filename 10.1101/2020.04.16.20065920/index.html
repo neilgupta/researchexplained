@@ -28,12 +28,12 @@ published_on: 2020-05-09
       {% include expand_details.html positive_count=1 warning_count=1 %}
       <div class="collapsible">
         <h4>Our Take</h4>
-        <h5>✅ VA database has detailed information on each patient</h5>
+        <h5>{% include pos.html %} VA database has detailed information on each patient</h5>
         <p>
           The authors had access to the VA's comprehensive database, a rich dataset that not only helped them identify COVID-19 patients but also gave them detailed information about each patient’s medical background. Since they could not control anything about which patients went into which treatment category, they were able to use this extra information to statistically adjust for certain factors like pre-existing conditions.
         </p>
 
-        <h5>⚠️ Retrospective study means patients were not randomized</h5>
+        <h5>{% include neg.html %} Retrospective study means patients were not randomized</h5>
         <p>
           This was a retrospective study, meaning the data was collected before this study was conceived. Thus, when the authors wanted to ask a question about hydroxychloroquine efficacy, they had no ability to randomize which patients received which treatments (necessary for reducing bias). This has led to certain issues in the patient pool. For instance, all patients were elderly men (between ages 59-75), the majority were black <span id="fnr:2" class="fn"><a class="hint--bottom hint--medium hint--rounded" aria-label="This could actually be helpful given COVID-19 has disproportionately hit African-American communities." href="#fn:2">2</a></span>, and those given hydroxychloroquine tended to be more sick.
         </p>
@@ -61,12 +61,12 @@ published_on: 2020-05-09
         <p>The researchers divided the 368 patients into 3 groups: 97 received hydroxychloroquine (HCQ), 113 received both HCQ + azithromycin <span id="fnr:3" class="fn"><a class="hint--bottom hint--medium hint--rounded" aria-label="Some people were speculating that the two drugs would work better together." href="#fn:3">3</a></span>, and 158 received no HCQ (the control group).</p>
 
         <h4>Our Take</h4>
-        <h5>✅ Adjusted for different patient sickness levels</h5>
+        <h5>{% include pos.html %} Adjusted for different patient sickness levels</h5>
         <p>
           Overall, the statistical methods used were reasonable given the type of data they were working with. The researchers used statistical techniques to adjust for how sick patients were when they started treatment.
         </p>
         <h5>
-          ⚠️ Lack of control for azithromycin
+          {% include neg.html %} Lack of control for azithromycin
         </h5>
         <p>
           50 patients (~30%) in the "No HCQ" control group received azithromycin. As a result, we don't know whether azithromycin made a difference in how these patients did. The most common reason for researchers to lump these groups together is to maintain <a href="https://en.wikipedia.org/wiki/Power_of_a_test">statistical power</a>, which is a term for the ability of a study to determine whether a treatment (in this case, HCQ) makes a difference. Unfortunately, they did not explain their decision in the text.
@@ -95,7 +95,7 @@ published_on: 2020-05-09
         <p>Even after accounting for pre-existing illness, patients who received HCQ were significantly more likely to die. Patients who received both HCQ and azithromycin faced a similar death rate as the control group who received no HCQ at all. Each treatment group was roughly equally likely to be placed on a ventilator.</p>
         <h4>Our Take</h4>
         <h5>
-          ⚠️ HCQ adminstered as a hail mary
+          {% include neg.html %} HCQ adminstered as a hail mary
         </h5>
         <p>
           19 patients did not receive hydroxychloroquine until after they were put on a ventilator. It's possible that by this point it was too late and nothing was going to change how these patients did. By grouping them into the HCQ group, it might have made that group look more fatal. In certain types of studies (called <a href="https://en.wikipedia.org/wiki/Randomized_controlled_trial">randomized control trials</a>), researchers use something known as <a href="https://en.wikipedia.org/wiki/Intention-to-treat_analysis">intention-to-treat analysis</a> to avoid skewing the results in this fashion. In this study, the researchers could have done something similar and presented data based on the treatments patients got before going on the ventilator.
@@ -116,7 +116,7 @@ published_on: 2020-05-09
       {% include expand_details.html positive_count=1 %}
       <div class="collapsible">
         <h4>Our Take</h4>
-        <h5>✅ Balanced conclusion</h5>
+        <h5>{% include pos.html %} Balanced conclusion</h5>
         <p>
           Despite the issues with the analysis that we pointed out above, the authors made balanced conclusions that were grounded in the data and results. They also acknowledged the drawbacks of their study. Because this was a VA study, only male patients were included and in general, these patients were older (median age 65 years) and a majority were black. This makes it harder to generalize the findings to the rest of the population.
         </p>

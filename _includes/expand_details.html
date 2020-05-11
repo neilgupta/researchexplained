@@ -5,12 +5,12 @@
     </svg> Learn more
     {% if include.positive_count %}
     {% for i in (1..include.positive_count) %}
-    <span class="pill" style="margin-left: 5px;">✅</span>
+    <span class="pill" style="margin-left: 5px;"><svg aria-label="good" height='1em' width='1em' style="margin-bottom: -1px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1" viewBox="0 0 847 847" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd"><g><path fill="#47b881" d="M299 522l396 -396c18,-18 47,-18 65,0l51 51c18,18 18,47 0,64l-479 480c-18,18 -47,18 -65,0l-232 -232c-17,-17 -17,-46 0,-64l52 -51c17,-18 46,-18 64,0l148 148z"></path></g></svg></span>
     {% endfor %}
     {% endif %}
     {% if include.warning_count %}
     {% for i in (1..include.warning_count) %}
-    <span class="pill" style="margin-left: 5px;">⚠️</span>
+    <span class="pill" style="margin-left: 5px;"><svg aria-label="warning" height='1em' width='1em' style="margin-bottom: -1px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" version="1.1" viewBox="0 0 847 847" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd"><g><polygon fill="#ec4c47" points="423,304 707,20 827,140 543,423 827,707 707,827 423,543 140,827 20,707 304,423 20,140 140,20 "></polygon></g></svg></span>
     {% endfor %}
     {% endif %}
   </a>
