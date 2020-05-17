@@ -15,6 +15,10 @@ layout: base
     <div class="warning" style="margin-top: 1em; font-size: 1.2em;">
       <strong>The original paper was updated.</strong> The authors revised their paper based on community feedback. The changes were significant enough to require an updated explanation. <a href="{{ latest.url }}">See the latest explanation &rarr;</a>
     </div>
+  {% elsif page.version > 1 %}
+    <div class="info" style="margin-top: 1em; font-size: 1.2em;">
+      <strong>The original paper was updated.</strong> The changes were significant enough that we have revised our explanation below.
+    </div>
   {% endif %}
 </div>
 
