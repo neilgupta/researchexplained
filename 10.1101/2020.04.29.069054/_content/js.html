@@ -1,0 +1,64 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script>
+  new Chart(document.getElementById('results1Chart'), {
+    type: 'pie',
+    data: {
+      datasets: [{
+        data: [20, 174, 124],
+        backgroundColor: ['#00a2a4', '#eae6e4', '#EC4C47'],
+        borderWidth: [0,0,0]
+      }],
+      labels: ['ICU', 'Inpatient (non-ICU)', 'Outpatient']
+    },
+    options: {
+      title: {
+        text: 'New Form (D614G)',
+        display: true,
+        fontSize: 16,
+        padding: 20,
+        fontColor: '#00a2a4'
+      },
+      legend: {
+        position: (window.innerWidth > 400 ? 'right' : 'bottom')
+      },
+      maintainAspectRatio: false,
+      layout: {
+        padding: {
+          top: 20,
+          bottom: 30
+        }
+      }
+    }
+  });
+
+  new Chart(document.getElementById('results2Chart'), {
+    type: 'pie',
+    data: {
+      datasets: [{
+        data: [3, 71, 41],
+        backgroundColor: ['#00a2a4', '#eae6e4', '#EC4C47'],
+        borderWidth: [0,0,0]
+      }],
+      labels: ['ICU', 'Inpatient (non-ICU)', 'Outpatient']
+    },
+    options: {
+      title: {
+        text: 'Old Form (D614)',
+        display: true,
+        fontSize: 16,
+        padding: 20,
+        fontColor: '#00a2a4'
+      },
+      legend: {
+        position: (window.innerWidth > 400 ? 'right' : 'bottom')
+      },
+      maintainAspectRatio: false,
+      layout: {
+        padding: {
+          top: 20,
+          bottom: 30
+        }
+      }
+    }
+  });
+</script>
