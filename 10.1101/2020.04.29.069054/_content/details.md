@@ -17,8 +17,4 @@ Amino acid 'aspartic acid' <span class="highlight" style="background-color: #FEF
 
 <p style="text-align: center;">
   <img src="img/D614G.png" alt="D614G visual explanation" width="80%" />
-
-  <img src="https://media1.tenor.com/images/12e2ad883f1e685431868ec8207b9e5b/tenor.gif" width="80%" alt="Dr Banner -> Hulk" />
 </p>
-
-<p class="caption">These 2 pictures are basically the same.</p>
