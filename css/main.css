@@ -74,6 +74,31 @@ p.caption {
   padding: 1rem 0;
 }
 
+.paper-question-arrow {
+  margin: -2.7em auto 0;
+  transform: rotate(45deg);
+  width: 2em;
+  height: 2em;
+  background-color: #C7CED4
+}
+
+.paper-title-frd {
+  background-color: #C7CED4;
+  color: #000;
+  font-size: 0.7em;
+  padding:1rem 2rem;
+  z-index: 2;
+  position: relative;
+  border-top: 1px solid #ccc;
+}
+
+.paper-title-frd p {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 0;
+  line-height: 1.7em;
+}
+
 h1 {
   font-weight: 700;
   margin: 0 auto;
@@ -682,6 +707,12 @@ footer #copyright {
 }*/
 #bios #max_bio {
   background-image: url("/about/max.jpg");
+}
+/*#bios #max_bio:hover {
+  background-image: url("/about/max_hover.jpeg");
+}*/
+#bios #jeremy_bio {
+  background-image: url("/about/jeremy.jpg");
 }
 /*#bios #max_bio:hover {
   background-image: url("/about/max_hover.jpeg");

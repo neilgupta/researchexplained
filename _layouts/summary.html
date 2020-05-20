@@ -8,21 +8,26 @@ layout: base
       <strong>This page is unpublished.</strong> This is a preview only and is not linked from the home page. DO NOT SHARE!
     </div>
   {% endif %}
-  <a href="/" style="text-decoration: none; font-weight: bold">Research Explained</a> &rarr; <em>{{ page.research_title }}</em>
+  <a href="/" style="text-decoration: none; font-weight: bold">Research Explained</a> &rarr; <em>Easy to understand, visual summaries of the latest research studies.</em>
 
   {% assign latest = site.pages | where: "doi", page.doi | sort: "version" | last %}
   {% if page.version != latest.version %}
-    <div class="warning" style="margin-top: 1em; font-size: 1.2em;">
-      <strong>The original paper was updated.</strong> The authors revised their paper based on community feedback. The changes were significant enough to require an updated explanation. <a href="{{ latest.url }}">See the latest explanation &rarr;</a>
+    <div class="warning" style="margin-top: 1em;margin-bottom:-0.5em;font-size: 1.2em;">
+      <strong>The original paper was updated.</strong> The authors revised their paper based on community feedback. <a href="{{ latest.url }}">See the latest explanation</a>.
     </div>
   {% elsif page.version > 1 %}
-    <div class="info" style="margin-top: 1em; font-size: 1.2em;">
-      <strong>The original paper was updated.</strong> The changes were significant enough that we have revised our explanation below.
+    <div class="info" style="margin-top: 1em;margin-bottom:-0.5em;font-size: 1.2em;">
+      <strong>This is the latest explanation.</strong> We revised it to account for updates made to the study by the researchers. <a href="#revisions">See revisions</a>.
     </div>
   {% endif %}
 </div>
 
+<div class="paper-title-frd">
+  <p><strong>This is a summary of</strong> "{{ page.research_title }}"</p>
+</div>
+
 <div class="paper-question">
+  <div class="paper-question-arrow">&nbsp;</div>
   <h1>{{ page.title }}</h1>
 </div>
 
