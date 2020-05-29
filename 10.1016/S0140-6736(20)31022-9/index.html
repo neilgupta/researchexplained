@@ -9,6 +9,7 @@ doi: 10.1016/S0140-6736(20)31022-9
 version: 1
 preprint: false
 preview: false
+include_js: true
 #published_on: 2020-05-28
 ---
 
@@ -48,6 +49,9 @@ preview: false
     </div>
     <div class="timeline-content">
       <h3 class="timeline-title">Randomized patients to receive either remdesivir or placebo</h3>
+      <div style="height: 300px">
+        <canvas id="treatmentChart"></canvas>
+      </div>
       {% include expand_details.html positive_count=1 %}
       <div class="collapsible">
         <h4>Our Take</h4>
@@ -112,7 +116,29 @@ preview: false
       <svg height='2em' width='2em' style="margin-left: -0.6em; margin-top: -0.2em;" fill="#000000" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" x="0px" y="0px"><g data-name="Group"><path data-name="Compound Path" d="M73.6,14.8H58.1a8.5,8.5,0,0,0-16.2,0H26.4a9.1,9.1,0,0,0-9,9V82.1a9,9,0,0,0,9,9H73.6a9,9,0,0,0,9-9V23.8A9.1,9.1,0,0,0,73.6,14.8Zm-31,2a1,1,0,0,0,1-.8,6.6,6.6,0,0,1,12.8,0,1,1,0,0,0,1,.8H62L65.9,28c.1.4.1.7-.1.9a1.1,1.1,0,0,1-.9.5h-30a1.2,1.2,0,0,1-.8-.4,1,1,0,0,1-.2-.9L37,16.8Zm38,65.3a7,7,0,0,1-7,7H26.4a7,7,0,0,1-7-7V23.8a7.1,7.1,0,0,1,7-7h8.5L32,27.6a2.8,2.8,0,0,0,.5,2.6,3.1,3.1,0,0,0,2.4,1.2h30a3.1,3.1,0,0,0,2.5-1.3,2.9,2.9,0,0,0,.4-2.7L64.2,16.8h9.4a7.1,7.1,0,0,1,7,7Z"></path><path data-name="Path" d="M30.1,45.7H49.9a1,1,0,0,0,1-1,.9.9,0,0,0-1-1H30.1a.9.9,0,0,0-1,1A1,1,0,0,0,30.1,45.7Z"></path><path data-name="Path" d="M69.9,56.7H30.1a.9.9,0,0,0-1,1,1,1,0,0,0,1,1H69.9a1,1,0,0,0,1-1A.9.9,0,0,0,69.9,56.7Z"></path><path data-name="Path" d="M69.9,69.7H30.1a.9.9,0,0,0-1,1,1,1,0,0,0,1,1H69.9a1,1,0,0,0,1-1A.9.9,0,0,0,69.9,69.7Z"></path></g></svg>
     </div>
     <div class="timeline-content">
-      <h3 class="timeline-title">No statistically significant difference between remdesivir and placebo groups</h3>
+      <h3 class="timeline-title">No significant difference between remdesivir and placebo groups</h3>
+      <table width="100%" style="margin: 10px 0 20px 0">
+        <tr>
+          <th width="40%"></th>
+          <th width="30%">Remdesivir</th>
+          <th width="30%">Placebo</th>
+        </tr>
+        <tr>
+          <td>Mortality</td>
+          <td>14%</td>
+          <td>13%</td>
+        </tr>
+        <tr>
+          <td>Days to Recover</td>
+          <td>21</td>
+          <td>23</td>
+        </tr>
+        <tr>
+          <td>Adverse Events</td>
+          <td>18%</td>
+          <td>26%</td>
+        </tr>
+      </table>
       {% include expand_details.html positive_count=1 %}
       <div class="collapsible">
         <p>

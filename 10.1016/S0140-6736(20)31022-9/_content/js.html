@@ -1,0 +1,33 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+<script>
+  new Chart(document.getElementById('treatmentChart'), {
+    type: 'pie',
+    data: {
+      datasets: [{
+        data: [158, 78],
+        backgroundColor: ['#00a2a4', '#eae6e4'],
+        borderWidth: [0,0]
+      }],
+      labels: ['Remdesivir', 'Placebo']
+    },
+    options: {
+      title: {
+        text: 'Treatment Groups',
+        display: true,
+        fontSize: 16,
+        padding: 20,
+        fontColor: '#00a2a4'
+      },
+      legend: {
+        position: (window.innerWidth > 400 ? 'right' : 'bottom')
+      },
+      maintainAspectRatio: false,
+      layout: {
+        padding: {
+          top: 20,
+          bottom: 30
+        }
+      }
+    }
+  });
+</script>
