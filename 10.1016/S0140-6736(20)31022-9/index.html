@@ -1,7 +1,7 @@
 ---
 layout: summary
 title: Does remdesivir, an antiviral medication, speed up how quickly hospitalized COVID-19 patients get better?
-description: In this study, researchers randomly administered either remdesivir or placebo to 237 patients. They found that Remdesivir was safe to take but not associated with treatment benefits.
+description: In this study, researchers randomly administered either remdesivir or placebo to 237 patients. They found that remdesivir was safe to take but not associated with treatment benefits.
 research_title: Remdesivir in adults with severe COVID-19 - a randomised, double-blind, placebo-controlled, multicentre trial
 research_link: https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31022-9/fulltext
 research_pdf: https://www.thelancet.com/action/showPdf?pii=S0140-6736%2820%2931022-9
@@ -10,7 +10,7 @@ version: 1
 preprint: false
 preview: false
 include_js: true
-#published_on: 2020-05-28
+published_on: 2020-05-30
 ---
 
 <h2>What did the study do?</h2>
@@ -59,7 +59,7 @@ include_js: true
           {% include pos.html %} Randomized double-blinded placebo-controlled study design
         </h5>
         <p>
-          This study was a prospective randomized double-blinded placebo-controlled trial. This is widely considered to provide the highest quality of clinical evidence by preventing confounding (hidden differences that impact outcomes) between the treatment and control groups. The authors assigned patients to remdesivir or placebo in a 2:1 ratio, which is an accepted strategy to control the number of patients in each treatment group. The authors stratified the randomization according to a dichotomous metric of respiratory support, which partially helped to ensure that the patients in one group of the trial were not far sicker than the patients in the other group at the beginning of the trial.
+          This study was a prospective randomized double-blinded placebo-controlled trial. This is widely considered to provide the highest quality of clinical evidence by preventing confounding (hidden differences that impact outcomes) between the treatment and control groups. The authors assigned patients to remdesivir or placebo in a 2:1 ratio, which is an accepted strategy to control the number of patients in each treatment group. The authors stratified the randomization according to whether or not patients required respiratory support, which partially helped to ensure that the patients in one group of the trial were not far sicker than the patients in the other group at the beginning of the trial.
         </p>
         {% include hide_details.html %}
       </div>
@@ -78,25 +78,25 @@ include_js: true
       <div class="collapsible">
         <h4>Our Take</h4>
         <h5>
-          {% include neg.html %} Unusual primary endpoint
+          {% include neg.html %} Unusual primary objectve
         </h5>
         <p>
-          The study investigators defined a 6-point clinical severity scale as their primary endpoint, with 6 representing death, 5 representing ECMO or mechanical ventilation, 4 representing non-invasive positive pressure ventilation or high-flow oxygen therapy, 3 representing oxygen therapy, 2 representing hospital admission and 1 representing feeling well enough to go home from the hospital. They further defined the primary endpoint as whether or not the patient achieved a 2-point reduction on this scale. This clinical scale is not without merit, but it had not been used prior to this study. It is more widely accepted to analyze endpoints such as mortality that can be easily compared across studies.
+          The study investigators defined a 6-point clinical severity scale, with 6 representing death, 5 representing ECMO or mechanical ventilation, 4 representing non-invasive positive pressure ventilation or high-flow oxygen therapy, 3 representing oxygen therapy, 2 representing hospital admission and 1 representing feeling well enough to go home from the hospital. They looked at how quickly each patient achieved a 2-point reduction on this scale. This clinical scale is reasonable, but it had not been used prior to this study. It is more widely accepted to analyze endpoints such as mortality that can be easily compared across studies.
         </p>
         <h5>
-          {% include pos.html %} Analyzed mortality as a secondary endpoint
+          {% include pos.html %} Analyzed mortality as a secondary objective
         </h5>
         <p>
-          As a secondary endpoint, the study investigators compared the mortality between the two arms of the trial at multiple time points. This was useful because it presented the study results in terms of a widely accepted metric.
+          The study investigators also compared the mortality between the two arms of the trial at multiple time points. This was useful because it presented the study results in terms of a widely accepted metric.
         </p>
         <h5>
           {% include pos.html %} Use of standardized statistical methods
         </h5>
         <p>
-          Although the 6-point clinical scale devised by the investigators was unusual, their use of the Cox proportional hazards model to compare the two study groups is widely accepted in the clinical literature.
+          Although the 6-point clinical scale devised by the investigators was unusual, their use of a statistical technique, called the <a href="https://en.wikipedia.org/wiki/Proportional_hazards_model">Cox proportional hazards model</a>, to compare the two study groups is widely accepted in clinical literature.
         </p>
         <p>
-          The study investigators performed intention-to-treat analysis, a form of data analysis that analyzes the patients in their assigned group even if they have to drop out of the study for some reason. This is a widely accepted conservative method to avoid obtaining misleading results.
+          The study investigators performed intention-to-treat analysis, a form of data analysis that analyzes the patients in their assigned group even if they have to drop out of the study for some reason. This is a widely accepted method to avoid obtaining misleading results.
         </p>
         <h5>
           {% include pos.html %} 28-day follow-up
