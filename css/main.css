@@ -714,9 +714,9 @@ footer #copyright {
 #bios #jeremy_bio {
   background-image: url("/about/jeremy.jpg");
 }
-/*#bios #max_bio:hover {
-  background-image: url("/about/max_hover.jpeg");
-}*/
+#bios #alli_bio {
+  background-image: url("/about/alli.jpg");
+}
 
 .todo {
   color: red;
