@@ -1,16 +1,16 @@
 ---
 layout: summary
-title: Does remdesivir, an antiviral medication, speed up how quickly hospitalized COVID-19 patients get better?
-description: In this study, researchers randomly administered either remdesivir or placebo to 237 patients. They found that remdesivir was safe to take but not associated with treatment benefits.
-research_title: Remdesivir in adults with severe COVID-19 - a randomised, double-blind, placebo-controlled, multicentre trial
-research_link: https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)31022-9/fulltext
-research_pdf: https://www.thelancet.com/action/showPdf?pii=S0140-6736%2820%2931022-9
-doi: 10.1016/S0140-6736(20)31022-9
+title: Is Remdesivir an effective treatment option for COVID-19 patients?
+description: In a large randomized, placebo-controlled study of hospitalized patients with COVID-19, patients who received remdesivir tended to recover days faster than those who received a placebo.
+research_title: Remdesivir for the Treatment of Covid-19 - Preliminary Report
+research_link: https://www.nejm.org/doi/pdf/10.1056/NEJMoa2007764
+research_pdf: https://www.nejm.org/doi/pdf/10.1056/NEJMoa2007764
+doi: 10.1056/NEJMoa2007764
 version: 1
 preprint: false
 preview: true
-include_js: true
-published_on: 2020-05-30
+include_js: false
+#published_on: 2020-05-30
 ---
 
 <h2>What did the study do?</h2>
@@ -24,17 +24,27 @@ published_on: 2020-05-30
       <svg height='2em' width='2em' style="margin-left: -0.6em; margin-top: -0.2em;" fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M35.635,36.152V17.668h27.47v18.484h18.48v27.469h-18.48v18.486h-27.47V63.621H17.151V36.152H35.635z M20.19,39.193v21.391  h18.484v18.482h21.39V60.584h18.484V39.193H60.064V20.709h-21.39v18.484H20.19z"></path></svg>
     </div>
     <div class="timeline-content">
-      <h3 class="timeline-title">Enrolled patients with COVID-19 from 10 hospitals</h3>
+      <h3 class="timeline-title">Enrolled patients with COVID-19 from over 60 hospitals</h3>
       {% include expand_details.html positive_count=1 warning_count=1 %}
       <div class="collapsible">
-        <h4>Our Take</h4>
-        <h5>{% include pos.html %} Realistic study population</h5>
         <p>
-          The study population was very applicable to the real world. It consisted of patients who were admitted to the hospital with SARS-CoV-2 pneumonia (confirmed by PCR testing and chest imaging) and who required supplemental oxygen or other respiratory support. The study design required enrollment, and hence, hospital admission, to occur within 12 days of symptom onset. This is probably applicable for most, if not all, COVID-19 patients who come to the hospital in the real world.
+          The project, called Adaptive COVID-19 Treatment Trial (ACTT-1) is a massive international endeavor, designed and led by the US National Institute of Allergy and Infectious Diseases (NIAID).
         </p>
-        <h5>{% include neg.html %} Patients used other medications</h5>
         <p>
-          Patients enrolled in this study were allowed to receive other medications. Although this is not totally avoidable for ethical reasons, these medications included the antiviral medication lopinavir-ritonavir, the antiviral and immune modulating medication interferon alfa-2b, and anti-inflammatory and immunosuppressive steroids. 29% of patients in the remdesivir group received interferon alfa-2b compared to 38% in the placebo group, a potentially noteworthy difference. On the other hand, similar numbers of patients received lopinavir-ritonavir (28% and 29%) and steroids (65% and 68%) in the two groups. Unfortunately, the investigators did not report the doses of these medications so that we could better compare whether the patients were treated similarly in the two groups.
+          At over 60 locations (mostly in the US but also Europe and Asia), adult (≥ 18 years old) patients hospitalized with a lab-confirmed SARS-CoV-2 (COVID-19) infection and evidence of lung infection were considered for the study. Ultimately 1063 patients were enrolled and randomly assigned to either get remdesivir or a placebo (sugar pill, a substance that looks identical but has no effect). Of note, patients with kidney problems were excluded from the study because remdesivir may cause kidney damage.
+        </p>
+        <p>
+          Patients' health status was ranked on a scale of 1-8, with 1 being non-hospitalized with no limitations of activities, 3 being hospitalized, and 8 being death. At baseline, all patients were between status 4-7.
+        </p>
+
+        <h4>Our Take</h4>
+        <h5>{% include pos.html %} Large group of patients representing variety of backgrounds</h5>
+        <p>
+          The study population consisted of adult patients hospitalized with COVID-19 and exhibiting lung-related symptoms, with a range of healthcare systems, geographic regions, and co-existing conditions represented. Patients tended to be middle-aged (median: 58.9 years old), male (64.3% overall), and white (53.2%). Other ethnicities were also represented in the study population, with 20.6% African-American, 23.4% Hispanic/Latino, 12.6% Asian, and 0.7% American Indian/Alaska Native.
+        </p>
+        <h5>{% include neg.html %} Possible other treatments used too</h5>
+        <p>
+          Although the study prohibited the use of other experimental treatments or medications, this was only if the participating hospital did not already have a written policy or guideline for existing COVID-19 treatments. What these other treatments were or what portion of the study population was affected by these exceptions is not mentioned in the text of the paper.
         </p>
         {% include hide_details.html %}
       </div>
@@ -48,18 +58,28 @@ published_on: 2020-05-30
       <svg height='2em' width='2em' style="margin-left: -0.6em; margin-top: -0.2em;" fill="#000000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><path d="M387.9111023,124.0889053c-14.2851257-14.2861938-33.3503418-22.15271-53.6844482-22.15271  s-39.399292,7.8665161-53.6844482,22.15271L124.0889053,280.5422058  c-14.2861938,14.2851562-22.15271,33.3503418-22.15271,53.6844482s7.8665161,39.3993225,22.15271,53.6844482  c14.2851334,14.2861938,33.3503342,22.15271,53.6844406,22.15271s39.3993073-7.8665161,53.684433-22.15271l156.4533234-156.4533234  c14.2861938-14.2851257,22.15271-33.3503418,22.15271-53.684433S402.1972961,138.3740387,387.9111023,124.0889053z   M223.0224915,379.4757996c-24.9521179,24.9500122-65.5461731,24.9500122-90.498291,0  c-24.9500046-24.9510498-24.9500046-65.5472412,0-90.498291l76.6929626-76.6929626l90.498291,90.498291L223.0224915,379.4757996z   M379.4757996,223.0224915l-71.3250427,71.3250427l-90.4983063-90.498291l71.325058-71.3250427  c12.4760742-12.4750061,28.8626099-18.7125015,45.2491455-18.7125015s32.7731018,6.2374954,45.2491455,18.7125015  C404.4258118,157.4752502,404.4258118,198.0714264,379.4757996,223.0224915z"></path></svg>
     </div>
     <div class="timeline-content">
-      <h3 class="timeline-title">Randomized patients to receive either remdesivir or placebo</h3>
-      <div style="height: 300px">
-        <canvas id="treatmentChart"></canvas>
-      </div>
-      {% include expand_details.html positive_count=1 %}
+      <h3 class="timeline-title">Patients received either remdesivir or placebo for 28 days</h3>
+      {% include expand_details.html positive_count=1 warning_count=1 %}
       <div class="collapsible">
+        <p>
+          Researchers randomly assigned patients, taking care to maintain similar numbers of individuals, as well as how sick they were and where they were located, between the two treatment groups. Doses were administered intravenously, with 200 mg given on day 1 and then 100 mg daily on days 2-10 (or until hospital discharge or death). The study was double-blinded, meaning neither the staff nor the patients knew which treatment the patients were being given.
+        </p>
+        <p>
+          Patient status (on the 1-8 scale) was recorded each day for 28 days, as well as any serious reactions or suspected side effects of the medication. If a patient’s status improved to 3 or below, that patient was considered "recovered". The main research question was how many days it took for patients to reach a "recovered" status.
+        </p>
+
         <h4>Our Take</h4>
         <h5>
-          {% include pos.html %} Randomized double-blinded placebo-controlled study design
+          {% include pos.html %} Double-blind randomized control study
         </h5>
         <p>
-          This study was a prospective randomized double-blinded placebo-controlled trial. This is widely considered to provide the highest quality of clinical evidence by preventing confounding (hidden differences that impact outcomes) between the treatment and control groups. The authors assigned patients to remdesivir or placebo in a 2:1 ratio, which is an accepted strategy to control the number of patients in each treatment group. The authors stratified the randomization according to whether or not patients required respiratory support, which partially helped to ensure that the patients in one group of the trial were not far sicker than the patients in the other group at the beginning of the trial.
+          Double-blind randomized controlled studies are considered a gold-standard in terms of testing the effect of a particular treatment, and great care appears to have been taken in the design and execution of this study.
+        </p>
+        <h5>
+          {% include neg.html %} Differences in group severity
+        </h5>
+        <p>
+          A slightly greater percentage of patients placed in the placebo group were severely ill than those in the remdesivir group (28.3% vs. 23.1% of patients with status 7, meaning they were hospitalized and receiving invasive mechanical ventilation). This could have given a slight bias in favor of better outcomes for those in the remdesivir group. The researchers did control for this in their statistical analysis.
         </p>
         {% include hide_details.html %}
       </div>
@@ -74,35 +94,23 @@ published_on: 2020-05-30
     </div>
     <div class="timeline-content">
       <h3 class="timeline-title">Compared improvement in remdesivir group with the placebo group</h3>
-      {% include expand_details.html positive_count=3 warning_count=1 %}
+      {% include expand_details.html positive_count=1 warning_count=1 %}
       <div class="collapsible">
+        <p>
+          Researchers used a statistical test to see how remdesivir affected how quickly patient’s recovered while accounting for how sick patients were at their baseline. The days-to-recovery measure was a change from the original plan to use patient status change (i.e. how much a patient’s status on the 1-8 scale changed during the 28 day period), however we do not think this decision is problematic as they chose a reasonable outcome assessment.
+        </p>
         <h4>Our Take</h4>
         <h5>
-          {% include neg.html %} Unusual primary objectve
+          {% include pos.html %} Standard statistical approach
         </h5>
         <p>
-          The study investigators defined a 6-point clinical severity scale, with 6 representing death, 5 representing ECMO or mechanical ventilation, 4 representing non-invasive positive pressure ventilation or high-flow oxygen therapy, 3 representing oxygen therapy, 2 representing hospital admission and 1 representing feeling well enough to go home from the hospital. They looked at how quickly each patient achieved a 2-point reduction on this scale. This clinical scale is reasonable, but it had not been used prior to this study. It is more widely accepted to analyze endpoints such as mortality that can be easily compared across studies.
+          This is a standard statistical approach to looking at survival trends in clinical trials. As a metric, how long it takes to recover makes practical sense. Furthermore, the study was designed to achieve 85% statistical power to detect if a treatment is effective -- generally, 80% power is considered a minimum standard. For comparison, an earlier remdesivir study we <a href="https://www.researchexplained.org/10.1016/s0140-6736(20)31022-9/">reviewed</a> only had a statistical power of 58%, casting some doubt onto that study’s ability to see an effect if one existed.
         </p>
         <h5>
-          {% include pos.html %} Analyzed mortality as a secondary objective
+          {% include neg.html %} Limited follow up
         </h5>
         <p>
-          The study investigators also compared the mortality between the two arms of the trial at multiple time points. This was useful because it presented the study results in terms of a widely accepted metric.
-        </p>
-        <h5>
-          {% include pos.html %} Use of standardized statistical methods
-        </h5>
-        <p>
-          Although the 6-point clinical scale devised by the investigators was unusual, their use of a statistical technique, called the <a href="https://en.wikipedia.org/wiki/Proportional_hazards_model">Cox proportional hazards model</a>, to compare the two study groups is widely accepted in clinical literature.
-        </p>
-        <p>
-          The study investigators performed intention-to-treat analysis, a form of data analysis that analyzes the patients in their assigned group even if they have to drop out of the study for some reason. This is a widely accepted method to avoid obtaining misleading results.
-        </p>
-        <h5>
-          {% include pos.html %} 28-day follow-up
-        </h5>
-        <p>
-          The patients in the study were followed for 28 days, which was long enough to determine what happened to most, but not all, of the patients. At the end of the study, the clinical outcome had still not been determined for 16% of remdesivir patients and 20% of placebo patients.
+          One issue with this design is at the end of each patient’s 28-day trial period, unless that patient recovered, their final status (failure to recover, death) is unknown. Furthermore, not all patients had completed the study by the time the preliminary report was released.
         </p>
         {% include hide_details.html %}
       </div>
@@ -116,7 +124,7 @@ published_on: 2020-05-30
       <svg height='2em' width='2em' style="margin-left: -0.6em; margin-top: -0.2em;" fill="#000000" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 100 100" x="0px" y="0px"><g data-name="Group"><path data-name="Compound Path" d="M73.6,14.8H58.1a8.5,8.5,0,0,0-16.2,0H26.4a9.1,9.1,0,0,0-9,9V82.1a9,9,0,0,0,9,9H73.6a9,9,0,0,0,9-9V23.8A9.1,9.1,0,0,0,73.6,14.8Zm-31,2a1,1,0,0,0,1-.8,6.6,6.6,0,0,1,12.8,0,1,1,0,0,0,1,.8H62L65.9,28c.1.4.1.7-.1.9a1.1,1.1,0,0,1-.9.5h-30a1.2,1.2,0,0,1-.8-.4,1,1,0,0,1-.2-.9L37,16.8Zm38,65.3a7,7,0,0,1-7,7H26.4a7,7,0,0,1-7-7V23.8a7.1,7.1,0,0,1,7-7h8.5L32,27.6a2.8,2.8,0,0,0,.5,2.6,3.1,3.1,0,0,0,2.4,1.2h30a3.1,3.1,0,0,0,2.5-1.3,2.9,2.9,0,0,0,.4-2.7L64.2,16.8h9.4a7.1,7.1,0,0,1,7,7Z"></path><path data-name="Path" d="M30.1,45.7H49.9a1,1,0,0,0,1-1,.9.9,0,0,0-1-1H30.1a.9.9,0,0,0-1,1A1,1,0,0,0,30.1,45.7Z"></path><path data-name="Path" d="M69.9,56.7H30.1a.9.9,0,0,0-1,1,1,1,0,0,0,1,1H69.9a1,1,0,0,0,1-1A.9.9,0,0,0,69.9,56.7Z"></path><path data-name="Path" d="M69.9,69.7H30.1a.9.9,0,0,0-1,1,1,1,0,0,0,1,1H69.9a1,1,0,0,0,1-1A.9.9,0,0,0,69.9,69.7Z"></path></g></svg>
     </div>
     <div class="timeline-content">
-      <h3 class="timeline-title">No significant difference between remdesivir and placebo groups</h3>
+      <h3 class="timeline-title">Patients who received remdesivir recovered faster with similar side effects</h3>
       <table width="100%" style="margin: 10px 0 20px 0">
         <tr>
           <th width="40%"></th>
@@ -124,34 +132,37 @@ published_on: 2020-05-30
           <th width="30%">Placebo</th>
         </tr>
         <tr>
-          <td>Mortality</td>
-          <td>14%</td>
-          <td>13%</td>
+          <td>Days to Recover</td>
+          <td>11</td>
+          <td>15</td>
         </tr>
         <tr>
-          <td>Days to Recover</td>
-          <td>21</td>
-          <td>23</td>
+          <td>Mortality</td>
+          <td>7.1%</td>
+          <td>11.9%</td>
         </tr>
         <tr>
           <td>Adverse Events</td>
-          <td>66%</td>
-          <td>64%</td>
+          <td>21.1%</td>
+          <td>27.0%</td>
         </tr>
       </table>
-      {% include expand_details.html positive_count=2 %}
+      {% include expand_details.html positive_count=1 warning_count=1 %}
       <div class="collapsible">
         <p>
-          After 28 days, 14% of remdesivir patients and 13% of placebo patients had died. This difference was not statistically significant. Of the remdesivir patients who survived, it took them an average of 21 days to clinically improve on the 6-point scale devised by the investigators, compared to 23 days for the placebo patients. This difference was not statistically significant. The rate of adverse events was similar between the remdesivir (66%) and placebo (64%) groups, suggesting that the medication was relatively safe.
+          This is good news for patients and potentially great news for hospitals and other systems whose resources can be quickly overwhelmed if a patients have to be hospitalized for an extended period. However, this was primarily for patients who required oxygen but not ventilation (status 5). Generally, it did not appear remdesivir carried a greater risk of side effects compared to the placebo.
+        </p>
+        <p>
+          There was not a statistically significant difference in the death rate between patients who received Remdesivir as compared to the placebo. This may be because the study was stopped early before it had recruited enough patients and because we still don’t know the final outcome after 28 days for some of the patients in the study.
         </p>
         <h4>Our Take</h4>
-        <h5>{% include pos.html %} Meaningful results even though trial was halted early</h5>
+        <h5>{% include pos.html %} Accurate conclusion</h5>
         <p>
-          In the Methods section of the paper, the investigators described how they initially intended to enroll 453 patients (rather than the 236 who were actually enrolled), but the trial had to be halted early because the initial outbreak was controlled in Wuhan, Hubei, China. However, the number of patients enrolled in the trial was probably sufficient to tell us that even if remdesivir helps patients with SARS-CoV-2 pneumonia, it is unlikely to be the magic bullet many had hoped.
+          The researchers arrived at a suitable conclusion based on the data they had obtained.
         </p>
-        <h5>{% include pos.html %} Reasonable conclusion</h5>
+        <h5>{% include neg.html %} Trial stopped early</h5>
         <p>
-          The study investigators arrived at a suitable conclusion based upon the data.
+          This study was stopped early because the researchers saw a significant benefit in how quickly patients were recovering in the remdesivir group and felt it would be unethical to keep giving the placebo to patients. This recommendation was made by the Data and Safety Monitoring Board (DSMB) which regularly reviews the data (independent of the research team) to ensure the study is running safely. Unfortunately, at the time the study was stopped, there was not a statistically significant difference in the death rate between the treatment and placebo group. This decision to stop the study early has been <a href="https://www.statnews.com/2020/05/11/inside-the-nihs-controversial-decision-to-stop-its-big-remdesivir-study/">controversial</a>.
         </p>
         {% include hide_details.html %}
       </div>
@@ -163,14 +174,20 @@ published_on: 2020-05-30
 
 <ul class="timeline timeline-split">
   {% include media_review.html
-    link="https://www.statnews.com/2020/04/23/data-on-gileads-remdesivir-released-by-accident-show-no-benefit-for-coronavirus-patients/"
-    title="New data on Gilead’s remdesivir, released by accident, show no benefit for coronavirus patients. Company still sees reason for hope"
+    link="https://www.businessinsider.com/remdesivir-study-positive-results-hospitalized-coronavirus-patients-2020-5"
+    title="New research suggests the antiviral drug remdesivir may speed the recovery of hospitalized coronavirus patients"
     score=8 content="review1"
   %}
 
   {% include media_review.html
-    link="https://www.barrons.com/news/antiviral-remdesivir-showed-no-significant-benefit-in-virus-patients-01588174805"
-    title="Antiviral Remdesivir Showed 'No Significant Benefit' In Virus Patients"
+    link="https://www.nytimes.com/2020/05/23/health/coronavirus-remdesivir.html"
+    title="Federal Scientists Finally Publish Remdesivir Data"
     score=7 content="review2"
+  %}
+
+  {% include media_review.html
+    link="https://www.bbc.com/news/health-52805828"
+    title="Coronavirus: UK authorises anti-viral drug remdesivir"
+    score=6 content="review3"
   %}
 </ul>
