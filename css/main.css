@@ -246,6 +246,15 @@ p {
   margin: 0 auto;
 }
 
+.collapsible p {
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.collapsible p:first-child {
+  padding-top: 2rem;
+}
+
+
 ul, ol {
   max-width: 700px;
   padding: 2rem 2rem 2rem 4rem;
@@ -257,8 +266,24 @@ ul, ol {
   }
 }
 
+.collapsible ul,
+.collapsible ol {
+  padding: 0 2rem 0 4rem;
+}
+@media (min-width: 768px) {
+  .collapsible ul,
+  .collapsible ol {
+      padding: 0 2rem 0 4rem;
+  }
+}
+
 li {
   padding-bottom: 1em;
+}
+
+.collapsible li {
+  font-size: 1rem;
+  padding-bottom: 0;
 }
 
 .summary {
@@ -510,7 +535,25 @@ footer #copyright {
 .timeline-marker .score2,
 .timeline-marker .score1,
 .timeline-marker .score0,
-.timeline-marker .dot {
+.timeline-marker .dot,
+.timeline-marker .scoreexcellent,
+.timeline-marker .scoreverygood,
+.timeline-marker .scoregood,
+.timeline-marker .scoreok,
+.timeline-marker .scorenotok,
+.timeline-marker .scorebad,
+.timeline-marker .scoreverybad,
+.timeline-marker .scoreterrible,
+.timeline-marker .scorewtf,
+.timeline-marker .scoreexcellent,
+.timeline-marker .scoreverygood,
+.timeline-marker .scoregood,
+.timeline-marker .scoreok,
+.timeline-marker .scorenotok,
+.timeline-marker .scorebad,
+.timeline-marker .scoreverybad,
+.timeline-marker .scoreterrible,
+.timeline-marker .scorewtf {
   display: block;
   width: 10px;
   height: 10px;
@@ -528,7 +571,26 @@ footer #copyright {
 .timeline-info .score3,
 .timeline-info .score2,
 .timeline-info .score1,
-.timeline-info .score0, .pill {
+.timeline-info .score0,
+.timeline-info .scoreexcellent,
+.timeline-info .scoreverygood,
+.timeline-info .scoregood,
+.timeline-info .scoreok,
+.timeline-info .scorenotok,
+.timeline-info .scorebad,
+.timeline-info .scoreverybad,
+.timeline-info .scoreterrible,
+.timeline-info .scorewtf,
+.timeline-info .scoreexcellent,
+.timeline-info .scoreverygood,
+.timeline-info .scoregood,
+.timeline-info .scoreok,
+.timeline-info .scorenotok,
+.timeline-info .scorebad,
+.timeline-info .scoreverybad,
+.timeline-info .scoreterrible,
+.timeline-info .scorewtf,
+.pill {
   font-size: 0.8em;
   padding: 5px 7px;
   border-radius: 5px;
@@ -553,43 +615,71 @@ footer #copyright {
 .expandable:hover .score3,
 .expandable:hover .score2,
 .expandable:hover .score1,
-.expandable:hover .score0 {
+.expandable:hover .score0,
+.expandable.active .scoreexcellent,
+.expandable.active .scoreverygood,
+.expandable.active .scoregood,
+.expandable.active .scoreok,
+.expandable.active .scorenotok,
+.expandable.active .scorebad,
+.expandable.active .scoreverybad,
+.expandable.active .scoreterrible,
+.expandable.active .scorewtf,
+.expandable:hover .scoreexcellent,
+.expandable:hover .scoreverygood,
+.expandable:hover .scoregood,
+.expandable:hover .scoreok,
+.expandable:hover .scorenotok,
+.expandable:hover .scorebad,
+.expandable:hover .scoreverybad,
+.expandable:hover .scoreterrible,
+.expandable:hover .scorewtf {
   background-color: #084B8A;
   color: #fff;
 }
-.score9 {
+
+.score9,
+.scoreexcellent {
   background-color: #00783E;
   color: #fff;
 }
-.score8 {
+.score8,
+.scoreverygood {
   background-color: #47B881;
   color: #fff;
 }
-.score7 {
+.score7,
+.scoregood {
   background-color: #D4EEE2;
   color: #000;
 }
-.score6 {
+.score6,
+.scoreok {
   background-color: #F1FAF5;
   color: #000;
 }
-.score5 {
+.score5,
+.scorenotok {
   background-color: #FEF6F6;
   color: #000;
 }
-.score4 {
+.score4,
+.scorebad {
   background-color: #FAE2E2;
   color: #000;
 }
-.score3 {
+.score3,
+.scoreverybad {
   background-color: #EC4C47;
   color: #fff;
 }
-.score2 {
+.score2,
+.scoreterrible {
   background-color: #BF0E08;
   color: #fff;
 }
-.score1 {
+.score1,
+.scorewtf {
   background-color: #BF0E08;
   color: #fff;
 }
@@ -608,31 +698,40 @@ footer #copyright {
   background-color: #C7CED4;
 }
 
-.timeline-info .score9:after {
+.timeline-info .score9:after,
+.timeline-info .scoreexcellent:after {
   content: "Excellent";
 }
-.timeline-info .score8:after {
+.timeline-info .score8:after,
+.timeline-info .scoreverygood:after {
   content: "Very\00a0 Good";
 }
-.timeline-info .score7:after {
+.timeline-info .score7:after,
+.timeline-info .scoregood:after {
   content: "Good";
 }
-.timeline-info .score6:after {
+.timeline-info .score6:after,
+.timeline-info .scoreok:after {
   content: "OK";
 }
-.timeline-info .score5:after {
+.timeline-info .score5:after,
+.timeline-info .scorenotok:after {
   content: "Not OK";
 }
-.timeline-info .score4:after {
+.timeline-info .score4:after,
+.timeline-info .scorebad:after {
   content: "Bad";
 }
-.timeline-info .score3:after {
+.timeline-info .score3:after,
+.timeline-info .scoreverybad:after {
   content: "Very\00a0 Bad";
 }
-.timeline-info .score2:after {
+.timeline-info .score2:after,
+.timeline-info .scoreterrible:after {
   content: "Terrible";
 }
-.timeline-info .score1:after {
+.timeline-info .score1:after,
+.timeline-info .scorewtf:after {
   content: "WTF";
 }
 .timeline-info .score0:after {
