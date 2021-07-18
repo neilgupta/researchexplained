@@ -5,5 +5,5 @@ description: Have questions, found a mistake, or want to request us to cover a s
 question: How do I get in touch with you?
 ---
 
-* **Email:** [contact@researchexplained.org](mailto:contact@researchexplained.org)
+* **Email:** [researchexplained@neil.gg](mailto:researchexplained@neil.gg)
 * **Twitter:** [@researchexplain](https://twitter.com/researchexplain)

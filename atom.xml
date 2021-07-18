@@ -3,13 +3,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Research Explained</title>
-  <link href="https://www.researchexplained.org/atom.xml" rel="self"/>
-  <link href="https://www.researchexplained.org/"/>
+  <link href="https://researchexplained.neil.gg/atom.xml" rel="self"/>
+  <link href="https://researchexplained.neil.gg/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>https://www.researchexplained.org/</id>
+  <id>https://researchexplained.neil.gg/</id>
   <author>
     <name>Research Explained</name>
-    <email>contact@researchexplained.org</email>
+    <email>researchexplained@neil.gg</email>
   </author>
 
 {% assign summaries = site.pages | where: "layout", "summary" | sort: "published_on" | reverse %}
